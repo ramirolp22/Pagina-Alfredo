@@ -25,11 +25,9 @@
 }
 form{
     text-align: center;
-    border: 5px solid orange;
     color: rgb(153, 0, 255);
     margin-top: 30px;
     border-radius: 50px;
-    @include dimension( auto,500px )
 }
 .colorNaranja{
     color: rgb(255, 192, 106);

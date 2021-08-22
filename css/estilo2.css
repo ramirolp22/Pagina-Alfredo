@@ -306,12 +306,9 @@ ol li {
 
 form {
   text-align: center;
-  border: 5px solid orange;
   color: #9900ff;
   margin-top: 30px;
-  border-radius: 50px;
-  height: auto;
-  width: 500px; }
+  border-radius: 50px; }
 
 .colorNaranja {
   color: #ffc06a; }
