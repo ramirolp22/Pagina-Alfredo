@@ -16,19 +16,18 @@
 .encabezado__img{
     width: 85px;
 }
-.importante1{
-    grid-area: importante;
+.divImportante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.importante{ 
     border: 5px solid green;
     text-align: center;
 }
 .importante1__titulo{
     font-size: 2rem;
     font-family: 'Festive', cursive;
-}
-.importante2{
-    grid-area: importante2;
-    border: 5px solid green;
-    text-align: center;
 }
 .importante2__titulo{
     font-size: 2rem;
@@ -115,7 +114,7 @@
     @include dimension(200px,200px )
 }
 .carrusel{
-    width: 700px;
+    
     margin: auto;
 }
 .carrusel__borde{
