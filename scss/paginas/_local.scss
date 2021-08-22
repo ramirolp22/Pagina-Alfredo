@@ -1,0 +1,17 @@
+.divLocal{
+    border: 5px solid green;
+    padding: 1%;
+    width: 500px;
+    display: grid;
+    grid-template-areas: "icono"
+                         "texto";
+}
+.divLocal__icono{
+    width: 100px;
+    grid-area: icono;
+    justify-self: center;
+}
+.divLocal__texto{
+    grid-area: texto;
+    text-align: justify;
+}

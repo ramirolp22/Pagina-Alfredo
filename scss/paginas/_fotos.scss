@@ -1,0 +1,40 @@
+.divImagenes{
+    text-align: center;
+    display: grid;
+    grid-template-areas: "imag1 imag2 imag3"
+                         "imag4 imag5 imag6";
+    justify-items: center;
+    grid-row-gap: 40px;
+}
+.dimensionFotos{
+    width: 350px;
+    height: 350px
+}
+.divImagenes__img1{
+    @include dimension(350px,350px );
+    grid-area: imag1;
+    transition:all 1s;
+}
+.divImagenes__img1:hover{
+    @include dimension(500px,500px );
+}
+.divImagenes__img2{
+    grid-area: imag2;
+    @extend .dimensionFotos
+}
+.divImagenes__img3{
+    grid-area: imag3;
+    @extend .dimensionFotos
+}
+.divImagenes__img4{
+    grid-area: imag4;
+    @extend .dimensionFotos
+}
+.divImagenes__img5{
+    grid-area: imag5;
+    @extend .dimensionFotos
+}
+.divImagenes__img6{
+    grid-area: imag6;
+    @extend .dimensionFotos
+}

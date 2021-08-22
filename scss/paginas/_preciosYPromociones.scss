@@ -1,0 +1,32 @@
+.divTablas{
+    display: grid;
+    grid-template-areas: "tituloCI"
+                         "cajaIndividual"
+                         "tituloP"
+                         "promociones";
+                         grid-row-gap: 50px;
+    justify-content: center;
+}
+.divTablas__tituloCI{
+    grid-area: tituloCI;
+    justify-self: center;
+}
+.divTablas__tablaCajaI{
+    grid-area: cajaIndividual;
+    justify-self: center;
+    border: 5px solid green;
+    font-size: 1.5rem;
+    background-color: greenyellow;
+}
+.divTablas__tituloP{
+    grid-area: tituloP;
+    justify-self: center;
+}
+.divTablas__tablaPromociones{
+    grid-area: promociones;
+    justify-self: center;
+    font-size: 1.5rem;
+    border: 5px solid green;
+    background-color: greenyellow;
+}
+

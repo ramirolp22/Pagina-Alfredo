@@ -1,0 +1,11 @@
+@import "./paginas/index";
+@import "./paginas/global";
+@import "./paginas/fotos";
+@import "./paginas/local";
+@import "./paginas/preciosYPromociones";
+@import "./paginas/recomendaciones";
+@import "./paginas/nosotros";
+@mixin dimension ($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}

@@ -1,0 +1,39 @@
+
+.beneficios{
+    align-items: center;
+}
+.beneficios__div{
+    border: 2px solid;
+}
+.beneficios__div--naranja{
+    @extend .beneficios__div;
+    border-color: rgb(255, 192, 106);
+}
+.beneficios__div--violeta{
+    @extend .beneficios__div;
+    border-color: rgb(153, 0, 255) ;
+}
+.beneficios__div--verde{
+    @extend .beneficios__div;
+    border-color: green;
+}
+.divform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    text-align: center;
+    border: 5px solid orange;
+    color: rgb(153, 0, 255);
+    margin-top: 30px;
+    border-radius: 50px;
+    @include dimension( auto,500px )
+}
+.colorNaranja{
+    color: rgb(255, 192, 106);
+}
+.colorVioleta{
+    color: rgb(153, 0, 255) ;
+}
