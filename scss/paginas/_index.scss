@@ -8,13 +8,16 @@
     grid-area: header;
     align-items: center;
 }
+@font-face {
+    font-family: halimun;
+    src: url(../imagenes/halimun.ttf);
+}
 .encabezado__titulo{
-    font-size: 3rem;
-    font-style: italic;
-    line-height: 2;
+
+    font-family: halimun;
 }
 .encabezado__img{
-    width: 85px;
+    width: 100px;
 }
 .divImportante{
     display: flex;
