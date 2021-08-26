@@ -1,11 +1,51 @@
-.encabezado {
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: cursive;
+  font-size: 1rem; }
+
+nav ul li:hover {
+  text-decoration: underline #faad01;
+  transition: background-color 0.2s; }
+
+nav ul li ul li:hover {
+  background-color: #fcdfb7;
+  transition: background-color 0.2s; }
+
+#whatsapp {
+  width: 200px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px; }
+
+footer {
+  background-color: #faad01; }
+
+.sacarLinea {
+  text-decoration: none; }
+
+.presentacionIndex {
+  height: 100vh;
+  background-image: url(../imagenes/imagenPresentacion.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center; }
+
+.presentacionIndexNav {
   display: flex;
-  grid-area: header;
-  align-items: center; }
+  align-items: flex-start; }
 
 @font-face {
   font-family: halimun;
   src: url(../imagenes/halimun.ttf); }
+
+.letraNav {
+  font-size: 1.2rem; }
 
 .encabezado__titulo {
   font-family: halimun; }
@@ -14,13 +54,17 @@
   width: 100px; }
 
 .divImportante {
-  display: flex;
-  flex-direction: column;
+  background-color: #9a2c60;
   align-items: center; }
 
 .importante {
-  border: 5px solid green;
-  text-align: center; }
+  color: white;
+  text-align: center;
+  background-color: #9a2c60; }
+
+.importante--boton {
+  background-color: #faad01;
+  border: 0px; }
 
 .importante1__titulo {
   font-size: 2rem;
@@ -50,6 +94,9 @@
   100% {
     opacity: 0.8; } }
 
+.divCarta {
+  background-color: #689a3b; }
+
 .carta {
   grid-area: carta;
   display: grid;
@@ -57,10 +104,10 @@
   grid-template-rows: 1fr 3fr 3fr 3fr;
   grid-column-gap: 30px;
   grid-row-gap: 10px;
-  border: 5px solid #ffc06a;
   border-radius: 10%;
   /*margin: 0% 10%;*/
-  padding: 5%; }
+  padding: 5%;
+  width: 900px; }
 
 .carta__titulo {
   grid-area: tC;
@@ -73,17 +120,20 @@
 .carta__texto1 {
   grid-area: t1;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  text-align: center; }
 
 .carta__texto2 {
   grid-area: t2;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  text-align: center; }
 
 .carta__texto3 {
   grid-area: t3;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  text-align: center; }
 
 .carta__img1 {
   grid-area: img1;
@@ -116,54 +166,6 @@
 
 .row {
   --bs-gutter-x: 0; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-html {
-  font-size: 62.5%;
-  font-family: cursive;
-  font-size: 1rem; }
-
-nav ul li {
-  border: 2px solid black;
-  width: 100%;
-  text-align: center; }
-
-nav ul li ul li {
-  background-color: #ffc06a; }
-
-.correccionNav1 {
-  padding: 0;
-  margin: 0; }
-
-.borderMio {
-  border: 2px solid #886015; }
-
-.navegador {
-  background-color: #ffc06a; }
-
-nav ul li:hover {
-  background-color: #fcdfb7;
-  transition: background-color 1s; }
-
-nav ul li ul li:hover {
-  background-color: #fcdfb7;
-  transition: background-color 1s; }
-
-#whatsapp {
-  width: 200px;
-  position: fixed;
-  right: 0px;
-  bottom: 0px; }
-
-footer {
-  background-color: #a829fc; }
-
-.sacarLinea {
-  text-decoration: none;
-  color: black; }
 
 .divImagenes {
   text-align: center;

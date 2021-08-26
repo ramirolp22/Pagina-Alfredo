@@ -2,36 +2,21 @@
     margin: 0;
     padding: 0;
 } 
+$colorNaranja:#faad01;
+$colorVerde :#689a3b;
+$colorVioleta :#9a2c60;
 html{
     font-size: 62.5%;
     font-family: cursive;
     font-size: 1rem;
 }
-nav ul li{
-    border: 2px solid black;
-    width: 100%;
-    text-align: center;
-}
-nav ul li ul li{
-    background-color: rgb(255, 192, 106);
-}
-.correccionNav1{
-    padding: 0;
-    margin: 0;
-}
-.borderMio{
-    border: 2px solid rgb(136, 96, 21);
-}
-.navegador{
-    background-color: rgb(255, 192, 106);
-}
 nav ul li:hover{
-    background-color:rgb(252, 223, 183);
-    transition: background-color 1s;
+    text-decoration: underline $colorNaranja;
+    transition: background-color 0.2s;
 }
 nav ul li ul li:hover{
     background-color:rgb(252, 223, 183);
-    transition: background-color 1s;
+    transition: background-color 0.2s;
 }
 #whatsapp{
     width: 200px;
@@ -41,9 +26,13 @@ nav ul li ul li:hover{
 }
 
 footer{
-    background-color: rgb(168, 41, 252);
+    background-color: $colorNaranja;
 }
 .sacarLinea {
     text-decoration: none;
-    color: black;
+    
 }
+
+$colorNaranja:#faad01;
+$colorVerde :#689a3b;
+$colorVioleta :#9a2c60;

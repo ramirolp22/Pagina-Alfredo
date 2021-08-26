@@ -15,107 +15,86 @@
     <title>Alfredo Casero / Inicio</title>
 </head>
 <body>
-  <!--header--------------------------------------------------------------------------->
-  <div class="row">
-    <header class="encabezado col-sm-12 col-md-12 col-lg-12">
-        <div><img src="./imagenes/logoAlfredo1.jpeg" alt="Logo Alfredo" class="encabezado__img" ></div>
-        <div><h1 class="encabezado__titulo display-5 mt-4">ALFREDO</h1></div>
-    </header>
-  </div>
 <!--nav---------------------------------------------------------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light correccionNav1 borderMio">
-            <div class="container-fluid correccionNav1">
+    <div class="presentacionIndex row d-flex col-12">
+      <div class="presentacionIndexNav">
+        <nav class="navbar navbar-expand-lg navbar-light col-12  my-2 aling-items-center ">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./imagenes/logoAlfredo1S.png" alt="" width="100" height="100">
+              </a>
+            </div>
+            <div class="container-fluid justify-content-end">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav justify-content-center w-100 navegador">
+                <ul class="navbar-nav justify-content-end w-100 letraNav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./Pages/precios.html">Precios y promociones</a>
+                    <a class="nav-link text-light" href="./Pages/precios.html">Precios y promociones</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./Pages/recomendaciones.html">Recomendaciones</a>
+                    <a class="nav-link text-light" href="./Pages/recomendaciones.html">Recomendaciones</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Fotos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="./Pages/fotos.html">Fotos nuestras</a></li>
-                      <li><a class="dropdown-item" href="#">Fotos de ustedes</a></li>
+                      <li><a class="dropdown-item text-light " href="./Pages/fotos.html">Fotos nuestras</a></li>
+                      <li><a class="dropdown-item text-light" href="#">Fotos de ustedes</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="./Pages/clubAlfredo.html">Club Alfredo</a>
+                      <a class="nav-link text-light" href="./Pages/clubAlfredo.html">Club Alfredo</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="./Pages/local.html">Local</a>
+                      <a class="nav-link text-light" href="./Pages/local.html">Local</a>
                   </li>
                 </ul>
               </div>
             </div>
         </nav>
-    </div>
-<!--Carrusel--------------------------------------------------------------------------------->
-      <div class="row carrusel">
-        <div id="carouselExampleIndicators" class="carousel slide carrusel__borde col-sm-12" data-bs-ride="carousel" >
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="imagenes/imagenGrandeIndex.jpeg" class="d-block w-100" alt="..." >
-            </div>
-            <div class="carousel-item">
-              <img src="imagenes/imagenRVAlfredo.jpeg" class="d-block w-100" alt="..." >
-            </div>
-            <div class="carousel-item">
-              <img src="imagenes/imagenSAlfredo.jpeg" class="d-block w-100" alt="..." >
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
       </div>
-<!--Importtes y carta--------------------------------------------------------------->
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-4 order-sm-firs divImportante my-3 flex-md-row justify-content-around flex-lg-column order-lg-last">
-          <div class="card importante my-2" style="width: 18rem;">
+    </div>
+<!--Importantes--------------------------------------------------------------->
+      <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-around flex-column flex-md-row flex-lg-row divImportante">
+          <div class="card importante  border-0" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Pastas artesanales</h5>
               <p class="card-text">Somos una casa de pastas 100% artesanal y estamos desde el año 2015</p>
             </div>
           </div>
-          <div class="card importante" style="width: 18rem;">
+          <div class="card importante border-0" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Club Alfredo</h5>
               <p class="card-text">Club Alfredo es una suscripcion mensual en donde te aseguras unos sorrentinos cada mes</p>
-              <a href="./Pages/clubAlfredo.html" class="btn btn-primary">Me interesa!</a>
+              <a href="./Pages/clubAlfredo.html" class="btn btn-primary importante--boton">Me interesa!</a>
+            </div>
+          </div>
+          <div class="card importante border-0" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Sabores unicos</h5>
+              <p class="card-text">Cada finde tenemos sabores fuera de los comun, probalos!</p>
             </div>
           </div>
       </div>
-      <div class="carta col-sm-12 col-md-12 col-lg-8 ">
-            <h2 class="carta__titulo">Nuestra carta del finde</h2>
-                <img class="carta__img1 rounded-circle" src="imagenes/imagenSAlfredo.jpeg" alt="Foto masa morron" data-aos="fade-right">
-                <img class="carta__img2 rounded-circle" src="imagenes/imagenRVAlfredo.jpeg" alt="Foto masa espinaca" data-aos="fade-right">
-                <img class="carta__img3 rounded-circle" src="imagenes/imagenRRAlfredo.jpeg" alt="Foto masa remolacha" data-aos="fade-right">
-                <h3 class="carta__texto1"><p>Sorrentinos de masa de morron rellenos de espinaca, muzzarella y zanahoria glaseada</p></hl>
-                <h3 class="carta__texto2"><p>Raviolones de masa de espinaca rellenos de roquefort y cebolla caramelizada</p></hl>
-                <h3 class="carta__texto3"><p>Raviolones de masa de remolacha rellenos de bondiola a la mostaza</p></hl>                    
-      </div> 
-    </div>    
-    <footer>
+<!--Carta----------------------------------------------------------------------------------------------->
+      <div class="d-flex justify-content-center divCarta">
+          <div class="carta col-sm-12 col-md-12 col-lg-8">
+                <h2 class="carta__titulo">Nuestra carta del finde</h2>
+                    <img class="carta__img1 rounded-circle" src="imagenes/imagenSAlfredo.jpeg" alt="Foto masa morron" data-aos="fade-right">
+                    <img class="carta__img2 rounded-circle" src="imagenes/imagenRVAlfredo.jpeg" alt="Foto masa espinaca" data-aos="fade-right">
+                    <img class="carta__img3 rounded-circle" src="imagenes/imagenRRAlfredo.jpeg" alt="Foto masa remolacha" data-aos="fade-right">
+                    <h3 class="carta__texto1"><p>Sorrentinos de masa de morron rellenos de espinaca, muzzarella y zanahoria glaseada</p></hl>
+                    <h3 class="carta__texto2"><p>Raviolones de masa de espinaca rellenos de roquefort y cebolla caramelizada</p></hl>
+                    <h3 class="carta__texto3"><p>Raviolones de masa de remolacha rellenos de bondiola a la mostaza</p></hl>                    
+          </div>
+      </div>   
+    <footer class="colorUl">
       <ul>
         <li>
             <a class="sacarLinea" href="./index.html">Inicio</a>

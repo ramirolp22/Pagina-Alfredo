@@ -3,30 +3,44 @@
     height: $alto;
     width: $ancho;
 }
-.encabezado{
+.presentacionIndex{
+    height: 100vh;
+    background-image: url(../imagenes/imagenPresentacion.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+}
+.presentacionIndexNav{
     display: flex;
-    grid-area: header;
-    align-items: center;
+    align-items: flex-start;
 }
 @font-face {
     font-family: halimun;
     src: url(../imagenes/halimun.ttf);
 }
+.letraNav{
+    font-size: 1.2rem;
+}
 .encabezado__titulo{
-
     font-family: halimun;
 }
 .encabezado__img{
     width: 100px;
 }
 .divImportante{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   background-color: $colorVioleta;
+   align-items: center;
 }
 .importante{ 
-    border: 5px solid green;
+    color: white;
     text-align: center;
+    background-color: $colorVioleta;
+}
+.importante--boton{
+    background-color: $colorNaranja;
+    border: 0px;
 }
 .importante1__titulo{
     font-size: 2rem;
@@ -59,6 +73,9 @@
         opacity: 0.8;
     }
 }
+.divCarta{
+    background-color: $colorVerde;
+}
 .carta{
     grid-area: carta;
     display: grid;
@@ -69,10 +86,10 @@
     grid-template-rows: 1fr 3fr 3fr 3fr;
     grid-column-gap: 30px;
     grid-row-gap: 10px;
-    border: 5px solid rgb(255, 192, 106);
     border-radius: 10%;
     /*margin: 0% 10%;*/
     padding: 5%;
+    width: 900px;
 }
 .carta__titulo{
     grid-area: tC;
@@ -87,16 +104,19 @@
     grid-area: t1;
     justify-self: center;
     align-self: center;
+    text-align: center;
 }
 .carta__texto2{
     grid-area: t2;
     justify-self: center;
     align-self: center;
+    text-align: center;
 }
 .carta__texto3{
     grid-area: t3;
     justify-self: center;
     align-self: center;
+    text-align: center;
 }
 .carta__img1{
     grid-area: img1;
