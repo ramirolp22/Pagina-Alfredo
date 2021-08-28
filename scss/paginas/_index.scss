@@ -12,6 +12,18 @@
     background-size: cover;
     background-position: center;
 }
+.alfredoIndex{
+    text-align: center;
+    height: 70vh;
+}
+.alfredoIndex--titulo{
+    color: $colorNaranja;
+    font-family: halimun;
+}
+.alfredoIndex__divPastasArtesanales{
+    font-family: cursive;
+    text-align: center;
+}
 .presentacionIndexNav{
     display: flex;
     align-items: flex-start;
@@ -30,13 +42,13 @@
     width: 100px;
 }
 .divImportante{
-   background-color: $colorVioleta;
+   background-color: $colorVerde;
    align-items: center;
 }
 .importante{ 
     color: white;
     text-align: center;
-    background-color: $colorVioleta;
+    background-color: $colorVerde;
 }
 .importante--boton{
     background-color: $colorNaranja;
@@ -74,7 +86,7 @@
     }
 }
 .divCarta{
-    background-color: $colorVerde;
+    background-color: $colorVioleta;
 }
 .carta{
     grid-area: carta;
@@ -136,15 +148,47 @@
     align-self: center;
     @include dimension(200px,200px )
 }
-.carrusel{
-    
-    margin: auto;
-}
-.carrusel__borde{
-  /*width: 60%;*/
-  border: 5px solid black;
-  padding: 0 0;
+.footerIndex{
+    background-color: $colorNaranja;
 }
 .row{
     --bs-gutter-x: 0;
+}
+@media (max-width: 600px){
+    .carta{
+        grid-area: carta;
+        display: grid;
+        grid-template-areas: "tC"
+                             "img1"
+                             "t1"
+                             "img2"
+                             "t2"
+                             "img3"
+                             "t3";
+        grid-template-rows: 1fr ;
+        grid-column-gap: 30px;
+        grid-row-gap: 10px;
+        border-radius: 10%;
+        /*margin: 0% 10%;*/
+        padding: 5%;
+        width: 900px;
+    }
+    .carta__img1{
+        grid-area: img1;
+        justify-self: center;
+        align-self: center;
+        @include dimension(200px,200px )
+    }
+    .carta__img2{
+        grid-area: img2;
+        justify-self: center;
+        align-self: center;
+        @include dimension(200px,200px )
+    }
+    .carta__img3{
+        grid-area: img3;
+        justify-self: center;
+        align-self: center;
+        @include dimension(200px,200px )
+    }
 }

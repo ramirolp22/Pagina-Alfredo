@@ -30,8 +30,11 @@ form{
     border-radius: 50px;
 }
 .colorNaranja{
-    color: rgb(255, 192, 106);
+    color: $colorNaranja;
 }
 .colorVioleta{
-    color: rgb(153, 0, 255) ;
+    color: $colorVioleta ;
+}
+.colorVerde{
+    color: $colorVerde;
 }

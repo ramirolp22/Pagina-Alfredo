@@ -2,10 +2,20 @@
   margin: 0;
   padding: 0; }
 
+@font-face {
+  font-family: halimun;
+  src: url(../imagenes/halimun.ttf); }
+
 html {
   font-size: 62.5%;
   font-family: cursive;
   font-size: 1rem; }
+
+.miNav {
+  background-color: #faad01; }
+
+.titulos {
+  font-family: halimun; }
 
 nav ul li:hover {
   text-decoration: underline #faad01;
@@ -22,7 +32,7 @@ nav ul li ul li:hover {
   bottom: 0px; }
 
 footer {
-  background-color: #faad01; }
+  background-color: #689a3b; }
 
 .sacarLinea {
   text-decoration: none; }
@@ -35,6 +45,18 @@ footer {
   background-size: 100% 100%;
   background-size: cover;
   background-position: center; }
+
+.alfredoIndex {
+  text-align: center;
+  height: 70vh; }
+
+.alfredoIndex--titulo {
+  color: #faad01;
+  font-family: halimun; }
+
+.alfredoIndex__divPastasArtesanales {
+  font-family: cursive;
+  text-align: center; }
 
 .presentacionIndexNav {
   display: flex;
@@ -54,13 +76,13 @@ footer {
   width: 100px; }
 
 .divImportante {
-  background-color: #9a2c60;
+  background-color: #689a3b;
   align-items: center; }
 
 .importante {
   color: white;
   text-align: center;
-  background-color: #9a2c60; }
+  background-color: #689a3b; }
 
 .importante--boton {
   background-color: #faad01;
@@ -95,7 +117,7 @@ footer {
     opacity: 0.8; } }
 
 .divCarta {
-  background-color: #689a3b; }
+  background-color: #9a2c60; }
 
 .carta {
   grid-area: carta;
@@ -156,16 +178,42 @@ footer {
   height: 200px;
   width: 200px; }
 
-.carrusel {
-  margin: auto; }
-
-.carrusel__borde {
-  /*width: 60%;*/
-  border: 5px solid black;
-  padding: 0 0; }
+.footerIndex {
+  background-color: #faad01; }
 
 .row {
   --bs-gutter-x: 0; }
+
+@media (max-width: 600px) {
+  .carta {
+    grid-area: carta;
+    display: grid;
+    grid-template-areas: "tC" "img1" "t1" "img2" "t2" "img3" "t3";
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    border-radius: 10%;
+    /*margin: 0% 10%;*/
+    padding: 5%;
+    width: 900px; }
+  .carta__img1 {
+    grid-area: img1;
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    width: 200px; }
+  .carta__img2 {
+    grid-area: img2;
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    width: 200px; }
+  .carta__img3 {
+    grid-area: img3;
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    width: 200px; } }
 
 .divImagenes {
   text-align: center;
@@ -251,7 +299,9 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  background-color: #9a2c60;
+  color: white; }
 
 .recomendaciones__pasos {
   margin: 20px 0;
@@ -259,7 +309,7 @@ footer {
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 30px;
-  border: 5px dashed black;
+  border: 5px dashed white;
   border-radius: 20px;
   height: auto;
   width: 500px; }
@@ -271,22 +321,22 @@ ol li {
   text-decoration: underline; }
 
 .recomendaciones__salsaTitulo {
-  color: white;
+  color: black;
   text-align: center;
   margin: 0% 25%;
   border-radius: 30px;
-  background-color: black; }
+  background-color: white; }
 
 .recomendaciones__PCPTitulo {
   text-align: center;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   margin: 0% 11%;
   border-radius: 30px; }
 
-.recomendaciones__lista {
-  list-style-image: url("../imagenes/logoSorrentino.jpg"); }
-
+/*.recomendaciones__lista{
+    list-style-image: url("../imagenes/logoSorrentino.jpg");
+}*/
 .beneficios {
   align-items: center; }
 
@@ -315,7 +365,10 @@ form {
   border-radius: 50px; }
 
 .colorNaranja {
-  color: #ffc06a; }
+  color: #faad01; }
 
 .colorVioleta {
-  color: #9900ff; }
+  color: #9a2c60; }
+
+.colorVerde {
+  color: #689a3b; }

@@ -3,6 +3,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+    background-color: $colorVioleta;
+    color: white;
 }
 .recomendaciones__pasos{
     margin: 20px 0;
@@ -10,7 +12,7 @@
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 30px;
-    border: 5px dashed black;
+    border: 5px dashed white;
     border-radius: 20px;
     @include dimension( auto,500px )
 }
@@ -21,19 +23,19 @@ ol li{
     text-decoration: underline;
 }
 .recomendaciones__salsaTitulo{
-    color: white;
+    color: black;
     text-align: center;
     margin: 0% 25%;
     border-radius: 30px;
-    background-color: black;
+    background-color: white;
 }
 .recomendaciones__PCPTitulo{
     text-align: center;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     margin: 0% 11%;
     border-radius: 30px;
 }
-.recomendaciones__lista{
+/*.recomendaciones__lista{
     list-style-image: url("../imagenes/logoSorrentino.jpg");
-}
+}*/
