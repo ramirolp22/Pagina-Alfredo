@@ -6,6 +6,15 @@
   font-family: halimun;
   src: url(../imagenes/halimun.ttf); }
 
+.colorNaranja {
+  color: #faad01; }
+
+.colorVioleta {
+  color: #9a2c60; }
+
+.colorVerde {
+  color: #689a3b; }
+
 html {
   font-size: 62.5%;
   font-family: cursive;
@@ -17,13 +26,15 @@ html {
 .titulos {
   font-family: halimun; }
 
-nav ul li:hover {
-  text-decoration: underline #faad01;
-  transition: background-color 0.2s; }
+.dropdown-menu {
+  background-color: transparent; }
 
-nav ul li ul li:hover {
-  background-color: #fcdfb7;
-  transition: background-color 0.2s; }
+nav ul li:hover {
+  text-decoration: underline #faad01; }
+
+.iconoDelNav {
+  display: flex;
+  justify-content: flex-start; }
 
 #whatsapp {
   width: 200px;
@@ -33,6 +44,9 @@ nav ul li ul li:hover {
 
 footer {
   background-color: #689a3b; }
+
+footer ul li {
+  list-style: none; }
 
 .sacarLinea {
   text-decoration: none; }
@@ -60,20 +74,15 @@ footer {
 
 .presentacionIndexNav {
   display: flex;
-  align-items: flex-start; }
+  align-items: flex-start;
+  font-size: 1.2rem; }
 
 @font-face {
   font-family: halimun;
   src: url(../imagenes/halimun.ttf); }
 
-.letraNav {
-  font-size: 1.2rem; }
-
 .encabezado__titulo {
   font-family: halimun; }
-
-.encabezado__img {
-  width: 100px; }
 
 .divImportante {
   background-color: #689a3b;
@@ -82,7 +91,7 @@ footer {
 .importante {
   color: white;
   text-align: center;
-  background-color: #689a3b; }
+  background-color: transparent; }
 
 .importante--boton {
   background-color: #faad01;
@@ -184,6 +193,26 @@ footer {
 .row {
   --bs-gutter-x: 0; }
 
+.scale-up-center {
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
 @media (max-width: 600px) {
   .carta {
     grid-area: carta;
@@ -216,84 +245,59 @@ footer {
     width: 200px; } }
 
 .divImagenes {
-  text-align: center;
-  display: grid;
-  grid-template-areas: "imag1 imag2 imag3" "imag4 imag5 imag6";
-  justify-items: center;
-  grid-row-gap: 40px; }
+  background-color: #9a2c60; }
 
-.dimensionFotos, .divImagenes__img2, .divImagenes__img3, .divImagenes__img4, .divImagenes__img5, .divImagenes__img6 {
-  width: 350px;
-  height: 350px; }
-
-.divImagenes__img1 {
-  height: 350px;
-  width: 350px;
-  grid-area: imag1;
-  transition: all 1s; }
-
-.divImagenes__img1:hover {
-  height: 500px;
-  width: 500px; }
-
-.divImagenes__img2 {
-  grid-area: imag2; }
-
-.divImagenes__img3 {
-  grid-area: imag3; }
-
-.divImagenes__img4 {
-  grid-area: imag4; }
-
-.divImagenes__img5 {
-  grid-area: imag5; }
-
-.divImagenes__img6 {
-  grid-area: imag6; }
+@media (max-width: 600px) {
+  .margenImagenMeedio {
+    margin: 15px 0; } }
 
 .divLocal {
-  border: 5px solid green;
-  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 500px;
-  display: grid;
-  grid-template-areas: "icono" "texto"; }
+  padding: 10px; }
 
-.divLocal__icono {
-  width: 100px;
-  grid-area: icono;
-  justify-self: center; }
-
-.divLocal__texto {
-  grid-area: texto;
-  text-align: justify; }
+.divPagLocal {
+  height: 90vh;
+  background-color: #9a2c60; }
 
 .divTablas {
-  display: grid;
-  grid-template-areas: "tituloCI" "cajaIndividual" "tituloP" "promociones";
-  grid-row-gap: 50px;
-  justify-content: center; }
+  background-color: #9a2c60;
+  height: 90vh; }
 
 .divTablas__tituloCI {
-  grid-area: tituloCI;
-  justify-self: center; }
+  justify-content: center;
+  height: 100px;
+  display: flex;
+  align-items: center; }
 
 .divTablas__tablaCajaI {
-  grid-area: cajaIndividual;
-  justify-self: center;
-  border: 5px solid green;
-  font-size: 1.5rem;
-  background-color: greenyellow; }
+  background-color: #689a3b; }
 
 .divTablas__tituloP {
-  grid-area: tituloP;
-  justify-self: center; }
+  justify-content: center;
+  height: 100px;
+  display: flex;
+  align-items: center; }
 
 .divTablas__tablaPromociones {
-  grid-area: promociones;
-  justify-self: center;
-  font-size: 1.5rem;
-  border: 5px solid green;
-  background-color: greenyellow; }
+  background-color: #689a3b; }
+
+@media (min-width: 600px) {
+  .divTablas__tituloCI {
+    height: 200px; }
+  .divTablas__tablaCajaI {
+    background-color: #689a3b;
+    width: 50%;
+    margin: auto;
+    font-size: 1.2rem; }
+  .divTablas__tituloP {
+    height: 200px; }
+  .divTablas__tablaPromociones {
+    width: 70%;
+    margin: auto;
+    font-size: 1.2rem; } }
 
 .recomendaciones {
   display: flex;
@@ -360,15 +364,8 @@ ol li {
 
 form {
   text-align: center;
-  color: #9900ff;
   margin-top: 30px;
   border-radius: 50px; }
 
-.colorNaranja {
-  color: #faad01; }
-
-.colorVioleta {
-  color: #9a2c60; }
-
-.colorVerde {
-  color: #689a3b; }
+.divClubAlfredo {
+  background-color: #9a2c60; }

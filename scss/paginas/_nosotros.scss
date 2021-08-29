@@ -25,16 +25,9 @@
 }
 form{
     text-align: center;
-    color: rgb(153, 0, 255);
     margin-top: 30px;
     border-radius: 50px;
 }
-.colorNaranja{
-    color: $colorNaranja;
-}
-.colorVioleta{
-    color: $colorVioleta ;
-}
-.colorVerde{
-    color: $colorVerde;
+.divClubAlfredo{
+    background-color: $colorVioleta;
 }

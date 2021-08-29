@@ -11,59 +11,93 @@
     <title>Alfredo Casero / Fotos</title>
 </head>
 <body>
-  <!--header--------------------------------------------------------------------------->
-  <div class="row">
-    <header class="encabezado col-sm-12 col-md-12 col-lg-12">
-        <div><img src="../imagenes/logoAlfredo1.jpeg" alt="Logo Alfredo" class="encabezado__img" ></div>
-        <div><h1 class="encabezado__titulo display-5 mt-1">Alfredo</h1></div>
-    </header>
-  </div>
-    <div class="navegador">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light correccionNav1 borderMio">
-            <div class="container-fluid correccionNav1">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav w-100 navegador justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="precios.html">Precios y promociones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="recomendaciones.html">Recomendaciones</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Fotos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="fotos.html">Fotos nuestras</a></li>
-                      <li><a class="dropdown-item" href="#">Fotos de ustedes</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="clubAlfredo.html">Club Alfredo</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="local.html">Local</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+  <div class="presentacionIndexNav miNav">
+    <nav class="navbar navbar-expand-lg navbar-light col-12 my-2">
+        <div class="container justify-content-start">
+          <a class="navbar-brand" href="#">
+            <img src="../imagenes/logoNav.png" alt="" width="120" height="120">
+          </a>
+          <div><h1 class="titulos text-light">Fotos</h1></div>
         </div>
-    <h1 class="display-4 fw-bold text-center my-5">NUESTRAS FOTOS</h1>
-    <div class="divImagenes">
-        <img class="divImagenes__img1" src="../imagenes/imagenSAlfredo.jpeg" alt="Foto de sorrentinos">
-        <img class="divImagenes__img2" src="../imagenes/imagenRAlfredo.jpeg" alt="Foto de raviolones">
-        <img class="divImagenes__img3" src="../imagenes/imagenGrandeIndex.jpeg" alt=""> 
-        <img class="divImagenes__img4" src="../imagenes/imagenRRAlfredo.jpeg" alt="">
-        <img class="divImagenes__img5" src="../imagenes/imagenRVAlfredo.jpeg" alt="">
-        <img class="divImagenes__img6" src="../imagenes/imagenGrandeIndex.jpeg" alt="">
+        <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-end w-100">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="precios.html">Precios y promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="recomendaciones.html">Recomendaciones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fotos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item text-light " href="fotos.html">Fotos nuestras</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Fotos de ustedes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" href="clubAlfredo.html">Club Alfredo</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" href="local.html">Local</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </div>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Collapsed content</h5>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
     </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+    <div class="row divImagenes">
+      <div class=" row col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center my-3">
+        <div class=" col-sm-12 col-md-4 col-sm-4 d-flex justify-content-center"><img src="../imagenes/imagenSAlfredo.jpeg" alt="Foto de sorrentinos" height="350px"></div>
+        <div class=" col-sm-12 col-md-4 col-sm-4 d-flex justify-content-center margenImagenMeedio"><img src="../imagenes/imagenRAlfredo.jpeg" alt="Foto de raviolones" height="350px"></div>
+        <div class=" col-sm-12 col-md-4 col-sm-4 d-flex justify-content-center"><img src="../imagenes/imagenGrandeIndex.jpeg" alt="" height="350px"></div>
+      </div>
+      <div class=" row col-lg-12 col-md-12 col-sm-12 mb-3">
+        <div class=" col-sm-12 col-md-4 col-sm-4 d-flex justify-content-center"><img src="../imagenes/imagenRRAlfredo.jpeg" alt="" height="350px"></div>
+        <div class=" col-sm-12 col-md-4 col-sm-4 d-flex justify-content-center margenImagenMeedio"><img src="../imagenes/imagenRVAlfredo.jpeg" alt="" height="350px"></div>
+        <div class=" col-sm-12 col-md-4 col-sm-4 d-flex justify-content-center"><img src="../imagenes/imagenGrandeIndex.jpeg" alt="" height="350px"></div>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li>
+            <a class="sacarLinea" href="../index.html">Inicio</a>
+        </li>
+        <li>
+          <a class="sacarLinea" href="precios.html">Precios y promociones</a>
+        </li>
+        <li><a  class="sacarLinea"href="recomendaciones.html">Recomendaciones</a>
+        </li>
+        <li> <a class="sacarLinea" href="fotos.html">Fotos</a>
+        </li>
+        <li> <a class="sacarLinea" href="clubAlfredo.html">Club Alfredo</a>
+        </li>
+        <li>
+          <a class="sacarLinea" href="local.html">Local</a>
+        </li>
+      </ul>
+    </footer>      
     <script src="../js/bootstrap.js"></script>
 </body>
 </html>

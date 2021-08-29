@@ -1,17 +1,11 @@
 .divLocal{
-    border: 5px solid green;
-    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 500px;
-    display: grid;
-    grid-template-areas: "icono"
-                         "texto";
+    padding: 10px;
 }
-.divLocal__icono{
-    width: 100px;
-    grid-area: icono;
-    justify-self: center;
-}
-.divLocal__texto{
-    grid-area: texto;
-    text-align: justify;
+.divPagLocal{
+    height: 90vh;
+    background-color: $colorVioleta;
 }

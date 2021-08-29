@@ -13,59 +13,79 @@
 <body>
   <!--header--------------------------------------------------------------------------->
   <div class="row">
-    <header class="encabezado col-sm-12 col-md-12 col-lg-12">
-        <div><img src="../imagenes/logoAlfredo1.jpeg" alt="Logo Alfredo" class="encabezado__img" ></div>
-        <div><h1 class="encabezado__titulo display-5 mt-1">Alfredo</h1></div>
-    </header>
-  </div>
-    <div>
-        <div class="navegador">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light correccionNav1 borderMio">
-                <div class="container-fluid correccionNav1">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav w-100 navegador justify-content-center">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="precios.html">Precios y promociones</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="recomendaciones.html">Recomendaciones</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Fotos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="fotos.html">Fotos nuestras</a></li>
-                          <li><a class="dropdown-item" href="#">Fotos de ustedes</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="clubAlfredo.html">Club Alfredo</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="local.html">Local</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+    <div class="presentacionIndexNav miNav">
+      <nav class="navbar navbar-expand-lg navbar-light col-12 my-2">
+          <div class="container justify-content-start">
+            <a class="navbar-brand" href="#">
+              <img src="../imagenes/logoNav.png" alt="" width="120" height="120">
+            </a>
+            <div><h1 class="titulos text-light">Local</h1></div>
+          </div>
+          <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav justify-content-end w-100 letraNav">
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="precios.html">Precios y promociones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="recomendaciones.html">Recomendaciones</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Fotos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item text-light " href="fotos.html">Fotos nuestras</a></li>
+                    <li><a class="dropdown-item text-light" href="#">Fotos de ustedes</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="clubAlfredo.html">Club Alfredo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="local.html">Local</a>
+                </li>
+              </ul>
             </div>
-    <h2 class="text-center display-1 fw-bold">NUESTRO LOCAL</h2>
-    <div class="row d-flex justify-content-around aling-items-center">
-        <div class="divLocal col-sm-12 col-md-6 col-lg6">
-        <img class="divLocal__icono" src="../imagenes/iconoLocal.jpg" alt="Icono del local">
-        <h2 class="divLocal__texto"><p>Nuestro local esta en 66 n1716 e 29 y 30. Abrimos de lunes a viernes de 17 a 19:30hs, los sabados de 12 a 17hs y los domingos de 10:30 a 12:30hs. Te esperamos!</p></h2>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.3839686468373!2d-57.959618284148334!3d-34.94698378324957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e88bea8021f3%3A0x2221b8b71ffd3103!2sAv.%2066%201716%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1626111794069!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+          </div>
+      </nav>
     </div>
+    <div class="divPagLocal">
+        <div class="row d-flex justify-content-around aling-items-center my-3">
+            <div class="divLocal col-sm-12 col-md-6 col-lg6">
+            <h2 class="divLocal__texto"><p>Nuestro local esta en 66 n1716 e 29 y 30. Abrimos de lunes a viernes de 17 a 19:30hs, los sabados de 12 a 17hs y los domingos de 10:30 a 12:30hs. Te esperamos!</p></h2>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.3839686468373!2d-57.959618284148334!3d-34.94698378324957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e88bea8021f3%3A0x2221b8b71ffd3103!2sAv.%2066%201716%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1626111794069!5m2!1ses!2sar" width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <footer class="footerIndex">
+          <ul>
+            <li>
+                <a class="sacarLinea" href="./index.html">Inicio</a>
+            </li>
+            <li>
+              <a class="sacarLinea" href="./Pages/precios.html">Precios y promociones</a>
+            </li>
+            <li><a  class="sacarLinea"href="./Pages/recomendaciones.html">Recomendaciones</a>
+            </li>
+            <li> <a class="sacarLinea" href="./Pages/fotos.html">Fotos</a>
+            </li>
+            <li> <a class="sacarLinea" href="./Pages/clubAlfredo.html">Club Alfredo</a>
+            </li>
+            <li>
+              <a class="sacarLinea" href="./Pages/local.html">Local</a>
+            </li>
+          </ul>
+        </footer>   
+   </div>
+<script src="../js/bootstrap.js"></script>           
     <script src="../js/bootstrap.js"></script>
 </body>
 </html>

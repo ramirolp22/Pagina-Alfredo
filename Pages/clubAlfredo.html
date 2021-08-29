@@ -13,98 +13,120 @@
 </head>
 <body>
 <div class="row">
-  <!--header--------------------------------------------------------------------------->
-  <div class="row">
-    <header class="encabezado col-sm-12 col-md-12 col-lg-12">
-        <div><img src="../imagenes/logoAlfredo1.jpeg" alt="Logo Alfredo" class="encabezado__img" ></div>
-        <div><h1 class="encabezado__titulo display-5 my-1 ">Alfredo</h1></div>
-    </header>
-  </div>
   <!--nav------------------------------------------------------------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light correccionNav1 borderMio">
-            <div class="container-fluid correccionNav1">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav w-100 navegador justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="precios.html">Precios y promociones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="recomendaciones.html">Recomendaciones</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Fotos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="fotos.html">Fotos nuestras</a></li>
-                      <li><a class="dropdown-item" href="#">Fotos de ustedes</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="clubAlfredo.html">Club Alfredo</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="local.html">Local</a>
-                  </li>
+  <div class="presentacionIndexNav miNav">
+    <nav class="navbar navbar-expand-lg navbar-light col-12 my-2">
+        <div class="container justify-content-start">
+          <a class="navbar-brand" href="#">
+            <img src="../imagenes/logoNav.png" alt="" width="120" height="120">
+          </a>
+          <div><h1 class="titulos text-light">Club Alfredo</h1></div>
+        </div>
+        <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-end w-100">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="precios.html">Precios y promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="recomendaciones.html">Recomendaciones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fotos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item text-light " href="fotos.html">Fotos nuestras</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Fotos de ustedes</a></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
-    <div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" href="clubAlfredo.html">Club Alfredo</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" href="local.html">Local</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </div>
+    <div class="divClubAlfredo">
       <!--beneficios-------------------------------------------------------------------->
-      <h2 class="display-1 fw-bold text-center my-5"> <span class="colorNaranja">CLUB</span> <span class="colorVioleta">ALFREDO</span></h2>
-    </div>
-    <div>
-      <h2><p class="text-center px-3">Club Alfredo es una suscripcion mensual en la cual una vez por mes tenes multiples beneficios. Los envios los hacemos los viernes a La Plata, Los hornos, Gonnet y City Bell</p></h2>
-    </div>
-    <div class="beneficios row d-flex flex-column flex-md-row flex-lg-row justify-content-around aling-items-center">
-      <div class="card beneficios__div--naranja" style="width: 18rem;" data-aos="flip-left" data-aos-duration="1000">
-        <img src="../imagenes/simboloPeso.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Precios exclusivos para los miembros del Club Alfredo</p>
+      <div>
+        <h2 class="display-1 fw-bold text-center my-5"> <span class="colorNaranja">¿Que</span> <span class="colorVerde">es?</span></h2>
+      </div>
+      <div>
+        <h2><p class="text-center px-3">Club Alfredo es una suscripcion mensual en la cual una vez por mes tenes multiples beneficios. Los envios los hacemos los viernes a La Plata, Los hornos, Gonnet y City Bell</p></h2>
+      </div>
+      <div class="beneficios row d-flex flex-column flex-md-row flex-lg-row justify-content-around aling-items-center">
+        <div class="card beneficios__div--naranja" style="width: 18rem;" data-aos="flip-left" data-aos-duration="1000">
+          <img src="../imagenes/simboloPeso.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Precios exclusivos para los miembros del Club Alfredo</p>
+          </div>
+        </div>
+        <div class="my-4 card beneficios__div--violeta" style="width: 18rem;" data-aos="flip-left" data-aos-duration="1500">
+          <img src="../imagenes/simboloCarta.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Una carta exclusiva donde se encuentran muchos sabores, ademas de la carta del finde</p>
+          </div>
+        </div>
+        <div class="card beneficios__div--verde" style="width: 18rem;" data-aos="flip-left" data-aos-duration="2000">
+          <img src="../imagenes/simboloVino.jpg" class="card-img-top" alt="..." height="280px">
+          <div class="card-body">
+            <p class="card-text">Contaras con 2 vinos de una vinoteca muy famosa! </p>
+          </div>
         </div>
       </div>
-      <div class="my-4 card beneficios__div--violeta" style="width: 18rem;" data-aos="flip-left" data-aos-duration="1500">
-        <img src="../imagenes/simboloCarta.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Una carta exclusiva donde se encuentran muchos sabores, ademas de la carta del finde</p>
-        </div>
+      <div class="divform">
+        <form enctype="application/x-www-form-urlencoded" method="GET">
+          <div><label for="nombreyapellido">Nombre y apellido</label></div>
+          <div>
+          <input type="text" id="nombreyapellido">
+          </div>
+          <div><label for="casilla">Email</label></div>
+          <div>
+          <input type="email" id="casilla">
+          </div>
+          <div><label for="escribir">Escribinos!</label></div>
+          <div>
+          <textarea name="" id="escribir" placeholder="Escribe aqui"></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
       </div>
-      <div class="card beneficios__div--verde" style="width: 18rem;" data-aos="flip-left" data-aos-duration="2000">
-        <img src="../imagenes/simboloVino.jpg" class="card-img-top" alt="..." height="280px">
-        <div class="card-body">
-          <p class="card-text">Contaras con 2 vinos de una vinoteca muy famosa! </p>
-        </div>
-      </div>
-    </div>
-    <div class="divform">
-      <form enctype="application/x-www-form-urlencoded" method="GET">
-        <div><label for="nombreyapellido">Nombre y apellido</label></div>
-        <div>
-        <input type="text" id="nombreyapellido">
-        </div>
-        <div><label for="casilla">Email</label></div>
-        <div>
-        <input type="email" id="casilla">
-        </div>
-        <div><label for="escribir">Escribinos!</label></div>
-        <div>
-        <textarea name="" id="escribir" placeholder="Escribe aqui"></textarea>
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="../js/bootstrap.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script src="../js/bootstrap.js"></script>
+  </div>
+  <footer>
+    <ul>
+      <li>
+          <a class="sacarLinea" href="../index.html">Inicio</a>
+      </li>
+      <li>
+        <a class="sacarLinea" href="precios.html">Precios y promociones</a>
+      </li>
+      <li><a  class="sacarLinea"href="recomendaciones.html">Recomendaciones</a>
+      </li>
+      <li> <a class="sacarLinea" href="fotos.html">Fotos</a>
+      </li>
+      <li> <a class="sacarLinea" href="clubAlfredo.html">Club Alfredo</a>
+      </li>
+      <li>
+        <a class="sacarLinea" href="local.html">Local</a>
+      </li>
+    </ul>
+  </footer>      
 </div>
 </body>
 </html> 

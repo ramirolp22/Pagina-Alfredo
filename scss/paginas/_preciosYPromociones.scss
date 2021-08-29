@@ -1,32 +1,41 @@
 .divTablas{
-    display: grid;
-    grid-template-areas: "tituloCI"
-                         "cajaIndividual"
-                         "tituloP"
-                         "promociones";
-                         grid-row-gap: 50px;
-    justify-content: center;
+    background-color: $colorVioleta;
+    height: 90vh;
 }
 .divTablas__tituloCI{
-    grid-area: tituloCI;
-    justify-self: center;
+    justify-content: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 .divTablas__tablaCajaI{
-    grid-area: cajaIndividual;
-    justify-self: center;
-    border: 5px solid green;
-    font-size: 1.5rem;
-    background-color: greenyellow;
+    background-color: $colorVerde;
 }
 .divTablas__tituloP{
-    grid-area: tituloP;
-    justify-self: center;
+    justify-content: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 .divTablas__tablaPromociones{
-    grid-area: promociones;
-    justify-self: center;
-    font-size: 1.5rem;
-    border: 5px solid green;
-    background-color: greenyellow;
+    background-color: $colorVerde;
 }
-
+@media (min-width: 600px){
+    .divTablas__tituloCI{
+        height: 200px;
+    }
+    .divTablas__tablaCajaI{
+        background-color: $colorVerde;
+        width: 50%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+    .divTablas__tituloP{
+        height: 200px;
+    }
+    .divTablas__tablaPromociones{
+        width: 70%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+}

@@ -27,19 +27,14 @@
 .presentacionIndexNav{
     display: flex;
     align-items: flex-start;
+    font-size: 1.2rem;
 }
 @font-face {
     font-family: halimun;
     src: url(../imagenes/halimun.ttf);
 }
-.letraNav{
-    font-size: 1.2rem;
-}
 .encabezado__titulo{
     font-family: halimun;
-}
-.encabezado__img{
-    width: 100px;
 }
 .divImportante{
    background-color: $colorVerde;
@@ -48,7 +43,7 @@
 .importante{ 
     color: white;
     text-align: center;
-    background-color: $colorVerde;
+    background-color: transparent;
 }
 .importante--boton{
     background-color: $colorNaranja;
@@ -154,6 +149,31 @@
 .row{
     --bs-gutter-x: 0;
 }
+.scale-up-center {
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
 @media (max-width: 600px){
     .carta{
         grid-area: carta;
