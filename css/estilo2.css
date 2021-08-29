@@ -245,7 +245,8 @@ footer ul li {
     width: 200px; } }
 
 .divImagenes {
-  background-color: #9a2c60; }
+  background-color: #9a2c60;
+  height: 90vh; }
 
 @media (max-width: 600px) {
   .margenImagenMeedio {
