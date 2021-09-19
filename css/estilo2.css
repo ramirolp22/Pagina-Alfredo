@@ -302,10 +302,8 @@ footer ul li {
 .divImagenes {
   background-color: #9a2c60; }
 
-/* Responsivo a mano---------*/
-@media (max-width: 600px) {
-  .margenImagenMeedio {
-    margin: 15px 0; } }
+.margenImagenMeedio {
+  margin: 15px 0 0 0; }
 
 /* estilo de la pagina----------------*/
 .divLocal {
@@ -338,9 +336,6 @@ footer ul li {
   width: 700px;
   margin: auto;
   justify-content: center; }
-
-#botonConsulta {
-  margin: auto; }
 
 /* responsive a mano-----------------*/
 @media (max-width: 800px) {
