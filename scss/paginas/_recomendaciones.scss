@@ -1,4 +1,5 @@
 
+/* Estilo de la pagina----------------------*/
 .recomendaciones{
     display: flex;
     justify-content: space-around;
@@ -7,6 +8,7 @@
     background-color: $colorVioleta;
     color: white;
 }
+/* Recomendaciones en si*/
 .recomendaciones__pasos{
     margin: 20px 0px;
     padding-right: 20px;
@@ -23,6 +25,7 @@ ol li{
 .divRecomendaciones h3{
     text-decoration: underline;
 }
+/* Titulos---------------*/
 .recomendaciones__salsaTitulo{
     color: black;
     text-align: center;
@@ -37,6 +40,3 @@ ol li{
     margin: 0% 11%;
     border-radius: 30px;
 }
-/*.recomendaciones__lista{
-    list-style-image: url("../imagenes/logoSorrentino.jpg");
-}*/

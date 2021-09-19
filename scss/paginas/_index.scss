@@ -3,6 +3,7 @@
     height: $alto;
     width: $ancho;
 }
+/* Imagen grande------------------------------------*/
 .presentacionIndex{
     height: 100vh;
     background-image: url(../imagenes/imagenPresentacion.jpeg);
@@ -21,22 +22,11 @@
     color: $colorNaranja;
     font-family: halimun;
 }
-.presentacionIndexNav{
-    display: flex;
-    align-items: flex-start;
-    font-size: 1.2rem;
-}
-@font-face {
-    font-family: halimun;
-    src: url(../imagenes/halimun.ttf);
-}
-.encabezado__titulo{
-    font-family: halimun;
-}
 .divImportante{
    background-color: $colorVerde;
    align-items: center;
 }
+/* Importantes-------------------------------------*/
 .importante{ 
     color: white;
     text-align: center;
@@ -46,29 +36,7 @@
     background-color: $colorNaranja;
     border: 0px;
 }
-.tituloI{
-    grid-area: tituloImagen;
-    justify-self: center;
-    align-self: center;
-    border: 3px solid black;
-    background-color: white;
-    border-radius: 10px;
-    padding: 1%;
-    opacity: 0.8;
-    animation-name: aparecer;
-    animation-duration: 4s;
-}
-@keyframes aparecer {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0.8;
-    }
-}
+/* Carta-------------------------------------------------*/
 .divCarta{
     background-color: $colorVioleta;
 }
@@ -83,7 +51,6 @@
     grid-column-gap: 30px;
     grid-row-gap: 10px;
     border-radius: 10%;
-    /*margin: 0% 10%;*/
     padding: 5%;
     width: 900px;
 }
@@ -133,6 +100,7 @@
     align-self: center;
     @include dimension(200px,200px )
 }
+/*footer-------------------------------------------------*/
 .footerIndex{
     background-color: $colorNaranja;
 }
@@ -140,6 +108,7 @@
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+/* Animaciones------------------------------*/
 @-webkit-keyframes scale-up-center {
     0% {
       -webkit-transform: scale(0.5);
@@ -160,7 +129,7 @@
               transform: scale(1);
     }
   }
-  
+/* Responsive a mano----------------------------*/
 @media (max-width: 600px){
     .carta{
         grid-area: carta;

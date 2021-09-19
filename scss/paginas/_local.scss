@@ -1,3 +1,4 @@
+/* estilo de la pagina----------------*/
 .divLocal{
     margin: auto;
     padding: 10px;
@@ -7,17 +8,35 @@
 .divPagLocal{
     background-color: $colorVioleta;
 }
-.formDeContacto{
-    width: 700px;
-    margin: auto;
-    justify-content: center;
+.imagenDelMedioLocal{
+    margin: 0px 0px 10px 0px;
 }
 .tituloContactanos{
     margin-top: 50px;
     margin-bottom: 30px;
 }
-@media (max-width: 700px){
+/* Modificacion del maps*/
+.max-wrapper{
+    max-width: 700px;
+    height: 600px;
+}
+.maps{
+    width: 100%;
+    height: 100%;
+}
+/*form del contacto--------------------------*/
+.formDeContacto{
+    width: 700px;
+    margin: auto;
+    justify-content: center;
+}
+/* responsive a mano-----------------*/
+@media (max-width: 800px){
     .formDeContacto{
         width: auto;
     }
+    .imagenDelMedioLocal{
+        margin: 10px 0px;
+    }
 }
+

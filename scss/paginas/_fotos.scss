@@ -1,7 +1,9 @@
+/* estilo de la pagina*/
 .divImagenes{
     background-color: $colorVioleta;
     height: 900px;
 }
+/* Responsivo a mano---------*/
 @media (max-width: 600px){
     .margenImagenMeedio{
         margin: 15px 0;

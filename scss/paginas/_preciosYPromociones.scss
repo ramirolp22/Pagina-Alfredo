@@ -1,6 +1,8 @@
+/* Estilo de la pagina-------------*/
 .divTablas{
     background-color: $colorVioleta;
 }
+/* Cajas individuales----------------*/
 .divTablas__tituloCI{
     justify-content: center;
     height: 100px;
@@ -10,6 +12,7 @@
 .divTablas__tablaCajaI{
     background-color: $colorVerde;
 }
+/* Promociones---------------------------------*/
 .divTablas__tituloP{
     justify-content: center;
     height: 100px;
@@ -19,6 +22,7 @@
 .divTablas__tablaPromociones{
     background-color: $colorVerde;
 }
+/* Responsivo a mano--------------------------*/
 @media (min-width: 600px){
     .divTablas__tituloCI{
         height: 200px;

@@ -1,4 +1,9 @@
 
+/* Estilo de la pagina-----------*/
+.divClubAlfredo{
+    background-color: $colorVioleta;
+}
+/* Beneficios-----------------*/
 .beneficios{
     align-items: center;
 }
@@ -17,6 +22,7 @@
     @extend .beneficios__div;
     border-color: green;
 }
+/* Form para suscribirse----------------------*/
 .tituloSuscribirse{
     margin-top: 120px;
     margin-bottom: 50px;
@@ -36,7 +42,4 @@ form{
 .botonForm{
     background-color: $colorNaranja;
     border: 0px;
-}
-.divClubAlfredo{
-    background-color: $colorVioleta;
 }

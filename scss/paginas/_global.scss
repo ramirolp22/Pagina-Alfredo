@@ -2,14 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: cursive;
-} 
+}
+/* Variables------------------------*/
 $colorNaranja:#faad01;
 $colorVerde :#689a3b;
 $colorVioleta :#9a2c60;
-@font-face {
-    font-family: halimun;
-    src: url(../imagenes/halimun.ttf);
-}
 .colorNaranja{
     color: $colorNaranja;
 }
@@ -19,16 +16,23 @@ $colorVioleta :#9a2c60;
 .colorVerde{
     color: $colorVerde;
 }
-html{
-    font-size: 62.5%;
-    font-family: cursive;
-    font-size: 1rem;
+/* Tipografia que por alguna razon el servidor no me la toma, por lo que la tuve que cambiar*/
+@font-face {
+    font-family: halimun;
+    src: url(../imagenes/halimun.ttf);
 }
+/* nav modificado-------------------------*/
 .miNav{
     background-color: $colorNaranja;
 }
+.presentacionIndexNav{
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
 .titulos{
     font-family: halimun;
+    font-family: 'Pacifico', cursive;
 }
 .dropdown-menu{
     background-color: transparent;
@@ -49,6 +53,7 @@ nav ul li:hover{
     display: flex;
     justify-content: flex-start;
 }
+/* footer------------------------------------*/
 .divIconos{
     display: flex;
     align-items: center;
@@ -57,11 +62,6 @@ nav ul li:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-#whatsappLogo{
-    position: fixed;
-    bottom: 200px;
-    right: 30px;
 }
 .instagram{
     display: flex;
@@ -85,6 +85,3 @@ footer ul li{
 .row{
     --bs-gutter-x: 0;
 }
-$colorNaranja:#faad01;
-$colorVerde :#689a3b;
-$colorVioleta :#9a2c60;
