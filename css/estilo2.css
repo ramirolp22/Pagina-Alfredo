@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: cursive; }
 
 @font-face {
   font-family: halimun;
@@ -32,15 +33,42 @@ html {
 nav ul li:hover {
   text-decoration: underline #faad01; }
 
+.navbar .nav-link {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center; }
+
 .iconoDelNav {
   display: flex;
   justify-content: flex-start; }
 
-#whatsapp {
-  width: 200px;
+.divIconos {
+  display: flex;
+  align-items: center; }
+
+.whatsapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#whatsappLogo {
   position: fixed;
-  right: 0px;
-  bottom: 0px; }
+  bottom: 200px;
+  right: 30px; }
+
+.instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 footer {
   background-color: #689a3b; }
@@ -51,6 +79,9 @@ footer ul li {
 .sacarLinea {
   text-decoration: none; }
 
+.row {
+  --bs-gutter-x: 0; }
+
 .presentacionIndex {
   height: 100vh;
   background-image: url(../imagenes/imagenPresentacion.jpeg);
@@ -58,19 +89,16 @@ footer ul li {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  opacity: 1; }
 
 .alfredoIndex {
   text-align: center;
-  height: 70vh; }
+  margin-top: 7%; }
 
 .alfredoIndex--titulo {
   color: #faad01;
   font-family: halimun; }
-
-.alfredoIndex__divPastasArtesanales {
-  font-family: cursive;
-  text-align: center; }
 
 .presentacionIndexNav {
   display: flex;
@@ -96,14 +124,6 @@ footer ul li {
 .importante--boton {
   background-color: #faad01;
   border: 0px; }
-
-.importante1__titulo {
-  font-size: 2rem;
-  font-family: 'Festive', cursive; }
-
-.importante2__titulo {
-  font-size: 2rem;
-  font-family: 'Festive', cursive; }
 
 .tituloI {
   grid-area: tituloImagen;
@@ -167,6 +187,7 @@ footer ul li {
   text-align: center; }
 
 .carta__img1 {
+  border-radius: 50%;
   grid-area: img1;
   justify-self: end;
   align-self: center;
@@ -189,9 +210,6 @@ footer ul li {
 
 .footerIndex {
   background-color: #faad01; }
-
-.row {
-  --bs-gutter-x: 0; }
 
 .scale-up-center {
   -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -225,6 +243,8 @@ footer ul li {
     /*margin: 0% 10%;*/
     padding: 5%;
     width: 900px; }
+  .alfredoIndex {
+    margin-top: 100px; }
   .carta__img1 {
     grid-area: img1;
     justify-self: center;
@@ -246,26 +266,36 @@ footer ul li {
 
 .divImagenes {
   background-color: #9a2c60;
-  height: 90vh; }
+  height: 900px; }
 
 @media (max-width: 600px) {
   .margenImagenMeedio {
     margin: 15px 0; } }
 
 .divLocal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  padding: 10px; }
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+  text-align: center; }
 
 .divPagLocal {
-  height: 90vh;
   background-color: #9a2c60; }
 
+.formDeContacto {
+  width: 700px;
+  margin: auto;
+  justify-content: center; }
+
+.tituloContactanos {
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+@media (max-width: 700px) {
+  .formDeContacto {
+    width: auto; } }
+
 .divTablas {
-  background-color: #9a2c60;
-  height: 90vh; }
+  background-color: #9a2c60; }
 
 .divTablas__tituloCI {
   justify-content: center;
@@ -309,7 +339,7 @@ footer ul li {
   color: white; }
 
 .recomendaciones__pasos {
-  margin: 20px 0;
+  margin: 20px 0px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -357,6 +387,10 @@ ol li {
 .beneficios__div--verde {
   border-color: green; }
 
+.tituloSuscribirse {
+  margin-top: 120px;
+  margin-bottom: 50px; }
+
 .divform {
   display: flex;
   justify-content: center;
@@ -366,7 +400,12 @@ ol li {
 form {
   text-align: center;
   margin-top: 30px;
-  border-radius: 50px; }
+  border-radius: 50px;
+  margin-bottom: 100px; }
+
+.botonForm {
+  background-color: #faad01;
+  border: 0px; }
 
 .divClubAlfredo {
   background-color: #9a2c60; }

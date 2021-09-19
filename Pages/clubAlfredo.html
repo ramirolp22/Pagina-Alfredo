@@ -32,25 +32,19 @@
                 <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="precios.html">Precios y promociones</a>
+                <a class="nav-link text-light" href="precios.html">Precios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="recomendaciones.html">Recomendaciones</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Fotos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item text-light " href="fotos.html">Fotos nuestras</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Fotos de ustedes</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="fotos.html">Fotos</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link text-light" href="clubAlfredo.html">Club Alfredo</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-light" href="local.html">Local</a>
+                  <a class="nav-link text-light" href="local.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -58,9 +52,9 @@
     </nav>
   </div>
     <div class="divClubAlfredo">
-      <!--beneficios-------------------------------------------------------------------->
+<!--beneficios-------------------------------------------------------------------->
       <div>
-        <h2 class="display-1 fw-bold text-center my-5"> <span class="colorNaranja">¿Que</span> <span class="colorVerde">es?</span></h2>
+        <h2 class="display-1 fw-bold text-center my-5"> <span class="colorVerde">¿Que</span> <span class="colorVerde">es?</span></h2>
       </div>
       <div>
         <h2><p class="text-center px-3">Club Alfredo es una suscripcion mensual en la cual una vez por mes tenes multiples beneficios. Los envios los hacemos los viernes a La Plata, Los hornos, Gonnet y City Bell</p></h2>
@@ -84,23 +78,31 @@
             <p class="card-text">Contaras con 2 vinos de una vinoteca muy famosa! </p>
           </div>
         </div>
+<!--Form para suscribirse------------------------------------------------------------------------------>
+        <h2 class=" text-center display-5 tituloSuscribirse">Suscribite!</h2>
+        <div class="divform">
+          <form class="row g-3">
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-6">
+              <label for="inputAddress" class="form-label">Direccion</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="col-6">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Contanos que queres!</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary botonForm">Enviar</button>
+            </div>
+          </form>
       </div>
-      <div class="divform">
-        <form enctype="application/x-www-form-urlencoded" method="GET">
-          <div><label for="nombreyapellido">Nombre y apellido</label></div>
-          <div>
-          <input type="text" id="nombreyapellido">
-          </div>
-          <div><label for="casilla">Email</label></div>
-          <div>
-          <input type="email" id="casilla">
-          </div>
-          <div><label for="escribir">Escribinos!</label></div>
-          <div>
-          <textarea name="" id="escribir" placeholder="Escribe aqui"></textarea>
-          </div>
-          <button type="submit">Enviar</button>
-        </form>
       </div>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
@@ -108,24 +110,53 @@
       </script>
       <script src="../js/bootstrap.js"></script>
   </div>
-  <footer>
-    <ul>
-      <li>
-          <a class="sacarLinea" href="../index.html">Inicio</a>
-      </li>
-      <li>
-        <a class="sacarLinea" href="precios.html">Precios y promociones</a>
-      </li>
-      <li><a  class="sacarLinea"href="recomendaciones.html">Recomendaciones</a>
-      </li>
-      <li> <a class="sacarLinea" href="fotos.html">Fotos</a>
-      </li>
-      <li> <a class="sacarLinea" href="clubAlfredo.html">Club Alfredo</a>
-      </li>
-      <li>
-        <a class="sacarLinea" href="local.html">Local</a>
-      </li>
-    </ul>
+  <!--footer--------------------------------------------------------------------------->
+  <footer class="row">
+    <div class="col-lg-7 col-md-8 col-sm-6">
+        <ul>
+          <li>
+              <a class="text-light sacarLinea" href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="text-light sacarLinea" href="precios.html">Precios y promociones</a>
+          </li>
+          <li><a class="text-light sacarLinea" href="recomendaciones.html">Recomendaciones</a>
+          </li>
+          <li> <a class="text-light sacarLinea" href="fotos.html">Fotos</a>
+          </li>
+          <li> <a class="text-light sacarLinea" href="clubAlfredo.html">Club Alfredo</a>
+          </li>
+          <li>
+            <a class="text-light sacarLinea" href="local.html">Contacto</a>
+          </li>
+        </ul>
+    </div>
+    <div class="col-lg-5 col-md-4 col-sm-6 justify-content-around d-flex divIconos">
+        <div class="instagram">
+          <a href="https://www.instagram.com/alfredopastas/?hl=es">
+            <img src="../imagenes/iconoig.png" alt="Icoino de instagram" width="50px">
+          </a>
+          <div>
+          <h4>Instagram</h4>
+          </div>
+        </div>
+        <div class="facebook">
+          <a href="https://www.facebook.com/asorrentinosc">
+          <img src="../imagenes/iconoFacebook.png" alt="Icono de Facebook" class="facebook" width="50px">
+          </a>
+          <div>
+            <h4>Facebook</h4>
+          </div>
+        </div>
+        <div class="whatsapp">
+          <a href="https://wa.me/5492216911549">
+          <img src="../imagenes/whatsappLogo (2).png" alt="Icono de whatsapp" width="50px">
+          </a>
+          <div>
+            <h4>Whatsapp</h4>
+          </div>
+        </div>
+    </div>
   </footer>      
 </div>
 </body>

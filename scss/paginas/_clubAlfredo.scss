@@ -17,6 +17,10 @@
     @extend .beneficios__div;
     border-color: green;
 }
+.tituloSuscribirse{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
 .divform{
     display: flex;
     justify-content: center;
@@ -27,6 +31,11 @@ form{
     text-align: center;
     margin-top: 30px;
     border-radius: 50px;
+    margin-bottom: 100px;
+}
+.botonForm{
+    background-color: $colorNaranja;
+    border: 0px;
 }
 .divClubAlfredo{
     background-color: $colorVioleta;

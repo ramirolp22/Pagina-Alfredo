@@ -16,49 +16,44 @@
 </head>
 <body>
 <!--nav---------------------------------------------------------------------------->
-    <div class="presentacionIndex row d-flex col-12">
-      <div class="presentacionIndexNav">
-        <nav class="navbar navbar-expand-lg navbar-light col-12 my-2">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./imagenes/logoAlfredo1S.png" alt="" width="100" height="100">
-              </a>
-            </div>
-            <div class="container-fluid justify-content-end">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav justify-content-end w-100 letraNav">
-                  <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="./Pages/precios.html">Precios y promociones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="./Pages/recomendaciones.html">Recomendaciones</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Fotos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item text-light " href="./Pages/fotos.html">Fotos nuestras</a></li>
-                      <li><a class="dropdown-item text-light" href="#">Fotos de ustedes</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-light" href="./Pages/clubAlfredo.html">Club Alfredo</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-light" href="./Pages/local.html">Local</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+<div class="presentacionIndexNav miNav">
+  <nav class="navbar navbar-expand-lg navbar-light col-12 my-2 ">
+      <div class="container justify-content-start">
+        <a class="navbar-brand" href="#">
+          <img src="./imagenes/logoAlfredo1S.png" alt="" width="100" height="100">
+        </a>
+        <div><h1 class="titulos">Inicio</h1></div>
       </div>
+      <div class="container-fluid justify-content-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav justify-content-end w-100">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./Pages/precios.html">Precios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./Pages/recomendaciones.html">Recomendaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./Pages/fotos.html">Fotos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="./Pages/clubAlfredo.html">Club Alfredo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="./Pages/local.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+</div>
+    <div class="presentacionIndex row d-flex col-12">
       <div class="alfredoIndex scale-up-center">
         <h1 class="display-1 alfredoIndex--titulo ">Alfredo</h1>
         <div class="alfredoIndex__divPastasArtesanales">
@@ -100,30 +95,56 @@
                     <div class="carta__texto3"><h3><p>Raviolones de masa de remolacha rellenos de bondiola a la mostaza</p></h3></div>                    
           </div>
       </div>   
-    <footer class="footerIndex">
+</div>
+</div>
+<!--footer--------------------------------------------------------------------------------------------->
+<footer class="footerIndex row">
+  <div class="col-lg-7 col-md-8 col-sm-6">
       <ul>
         <li>
-            <a class="sacarLinea" href="./index.html">Inicio</a>
+            <a class="text-light sacarLinea" href="./index.html">Inicio</a>
         </li>
         <li>
-          <a class="sacarLinea" href="./Pages/precios.html">Precios y promociones</a>
+          <a class="text-light sacarLinea" href="./Pages/precios.html">Precios y promociones</a>
         </li>
-        <li><a  class="sacarLinea"href="./Pages/recomendaciones.html">Recomendaciones</a>
+        <li><a class="text-light sacarLinea" href="./Pages/recomendaciones.html">Recomendaciones</a>
         </li>
-        <li> <a class="sacarLinea" href="./Pages/fotos.html">Fotos</a>
+        <li> <a class="text-light sacarLinea" href="./Pages/fotos.html">Fotos</a>
         </li>
-        <li> <a class="sacarLinea" href="./Pages/clubAlfredo.html">Club Alfredo</a>
+        <li> <a class="text-light sacarLinea" href="./Pages/clubAlfredo.html">Club Alfredo</a>
         </li>
         <li>
-          <a class="sacarLinea" href="./Pages/local.html">Local</a>
+          <a class="text-light sacarLinea" href="./Pages/local.html">Contacto</a>
         </li>
       </ul>
-    </footer>      
-    <!--div>
-        <img src="imagenes/WhatsappLogo.png" alt="Logo de whatsapp" id="whatsapp">
-    </div-->
-</div>
-</div>
+  </div>
+  <div class="col-lg-5 col-md-4 col-sm-6 justify-content-around d-flex divIconos">
+      <div class="instagram">
+        <a href="https://www.instagram.com/alfredopastas/?hl=es">
+          <img src="imagenes/iconoig.png" alt="Icoino de instagram" width="50px">
+        </a>
+        <div>
+        <h4>Instagram</h4>
+        </div>
+      </div>
+      <div class="facebook">
+        <a href="https://www.facebook.com/asorrentinosc">
+        <img src="imagenes/iconoFacebook.png" alt="Icono de Facebook" class="facebook" width="50px">
+        </a>
+        <div>
+          <h4>Facebook</h4>
+        </div>
+      </div>
+      <div class="whatsapp">
+        <a href="https://wa.me/5492216911549">
+        <img src="imagenes/whatsappLogo (2).png" alt="Icono de whatsapp" width="50px">
+        </a>
+        <div>
+          <h4>Whatsapp</h4>
+        </div>
+      </div>
+  </div>
+</footer>      
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();

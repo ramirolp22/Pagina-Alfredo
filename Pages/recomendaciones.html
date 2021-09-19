@@ -12,49 +12,43 @@
 </head>
 <body>
 <div class="row">
-    <div class="presentacionIndexNav miNav">
-      <nav class="navbar navbar-expand-lg navbar-light col-12 my-2">
-          <div class="container justify-content-start">
-            <a class="navbar-brand" href="#">
-              <img src="../imagenes/logoNav.png" alt="" width="120" height="120">
-            </a>
-            <div><h1 class="titulos text-light">Recomendaciones</h1></div>
+  <div class="presentacionIndexNav miNav">
+    <nav class="navbar navbar-expand-lg navbar-light col-12 my-2">
+        <div class="container justify-content-start">
+          <a class="navbar-brand" href="#">
+            <img src="../imagenes/logoNav.png" alt="" width="120" height="120">
+          </a>
+          <div><h1 class="titulos text-light">Fotos</h1></div>
+        </div>
+        <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-end w-100">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="precios.html">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="recomendaciones.html">Recomendaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="fotos.html">Fotos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" href="clubAlfredo.html">Club Alfredo</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" href="local.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-          <div class="container-fluid justify-content-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav justify-content-end w-100 letraNav">
-                <li class="nav-item">
-                  <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="precios.html">Precios y promociones</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="recomendaciones.html">Recomendaciones</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Fotos
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item text-light " href="fotos.html">Fotos nuestras</a></li>
-                    <li><a class="dropdown-item text-light" href="#">Fotos de ustedes</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="clubAlfredo.html">Club Alfredo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="local.html">Local</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-      </nav>
-    </div>
+        </div>
+    </nav>
+  </div>
     <!--recomendaciones------------------------------------------------------------>
     <div class="recomendaciones">
       <div class="row col-12 d-flex justify-content-evenly">
@@ -161,24 +155,52 @@
         </div>
       </div>
     </div>
-    <footer>
-      <ul>
-        <li>
-            <a class="sacarLinea" href="../index.html">Inicio</a>
-        </li>
-        <li>
-          <a class="sacarLinea" href="precios.html">Precios y promociones</a>
-        </li>
-        <li><a  class="sacarLinea"href="recomendaciones.html">Recomendaciones</a>
-        </li>
-        <li> <a class="sacarLinea" href="fotos.html">Fotos</a>
-        </li>
-        <li> <a class="sacarLinea" href="clubAlfredo.html">Club Alfredo</a>
-        </li>
-        <li>
-          <a class="sacarLinea" href="local.html">Local</a>
-        </li>
-      </ul>
+    <footer class="row">
+      <div class="col-lg-7 col-md-8 col-sm-6">
+          <ul>
+            <li>
+                <a class="text-light sacarLinea" href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a class="text-light sacarLinea" href="precios.html">Precios y promociones</a>
+            </li>
+            <li><a class="text-light sacarLinea" href="recomendaciones.html">Recomendaciones</a>
+            </li>
+            <li> <a class="text-light sacarLinea" href="fotos.html">Fotos</a>
+            </li>
+            <li> <a class="text-light sacarLinea" href="clubAlfredo.html">Club Alfredo</a>
+            </li>
+            <li>
+              <a class="text-light sacarLinea" href="local.html">Contacto</a>
+            </li>
+          </ul>
+      </div>
+      <div class="col-lg-5 col-md-4 col-sm-6 justify-content-around d-flex divIconos">
+          <div class="instagram">
+            <a href="https://www.instagram.com/alfredopastas/?hl=es">
+              <img src="../imagenes/iconoig.png" alt="Icoino de instagram" width="50px">
+            </a>
+            <div>
+            <h4>Instagram</h4>
+            </div>
+          </div>
+          <div class="facebook">
+            <a href="https://www.facebook.com/asorrentinosc">
+            <img src="../imagenes/iconoFacebook.png" alt="Icono de Facebook" class="facebook" width="50px">
+            </a>
+            <div>
+              <h4>Facebook</h4>
+            </div>
+          </div>
+          <div class="whatsapp">
+            <a href="https://wa.me/5492216911549">
+            <img src="../imagenes/whatsappLogo (2).png" alt="Icono de whatsapp" width="50px">
+            </a>
+            <div>
+              <h4>Whatsapp</h4>
+            </div>
+          </div>
+      </div>
     </footer>      
     <script src="../js/bootstrap.js"></script>
 </div>

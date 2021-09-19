@@ -1,11 +1,23 @@
 .divLocal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
+    margin: auto;
     padding: 10px;
+    width: 90%;
+    text-align: center;
 }
 .divPagLocal{
-    height: 90vh;
     background-color: $colorVioleta;
+}
+.formDeContacto{
+    width: 700px;
+    margin: auto;
+    justify-content: center;
+}
+.tituloContactanos{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+@media (max-width: 700px){
+    .formDeContacto{
+        width: auto;
+    }
 }

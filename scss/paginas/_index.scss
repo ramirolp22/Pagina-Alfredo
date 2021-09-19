@@ -11,18 +11,15 @@
     background-size: 100% 100%;
     background-size: cover;
     background-position: center;
+    opacity: 1;
 }
 .alfredoIndex{
     text-align: center;
-    height: 70vh;
+    margin-top: 7%;
 }
 .alfredoIndex--titulo{
     color: $colorNaranja;
     font-family: halimun;
-}
-.alfredoIndex__divPastasArtesanales{
-    font-family: cursive;
-    text-align: center;
 }
 .presentacionIndexNav{
     display: flex;
@@ -48,14 +45,6 @@
 .importante--boton{
     background-color: $colorNaranja;
     border: 0px;
-}
-.importante1__titulo{
-    font-size: 2rem;
-    font-family: 'Festive', cursive;
-}
-.importante2__titulo{
-    font-size: 2rem;
-    font-family: 'Festive', cursive;
 }
 .tituloI{
     grid-area: tituloImagen;
@@ -126,6 +115,7 @@
     text-align: center;
 }
 .carta__img1{
+    border-radius: 50%;
     grid-area: img1;
     justify-self: end;
     align-self: center;
@@ -145,9 +135,6 @@
 }
 .footerIndex{
     background-color: $colorNaranja;
-}
-.row{
-    --bs-gutter-x: 0;
 }
 .scale-up-center {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -192,6 +179,9 @@
         /*margin: 0% 10%;*/
         padding: 5%;
         width: 900px;
+    }
+    .alfredoIndex{
+        margin-top: 100px;
     }
     .carta__img1{
         grid-area: img1;
