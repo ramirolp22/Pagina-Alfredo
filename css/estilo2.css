@@ -20,16 +20,17 @@
 
 /* nav modificado-------------------------*/
 .miNav {
-  background-color: #faad01; }
+  background-color: #faad01;
+  font-size: 1.2rem; }
 
 .presentacionIndexNav {
   display: flex;
-  align-items: flex-start;
-  font-size: 1.2rem; }
+  align-items: flex-start; }
 
 .titulos {
   font-family: halimun;
-  font-family: 'Pacifico', cursive; }
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem; }
 
 .dropdown-menu {
   background-color: transparent; }
@@ -82,6 +83,69 @@ footer ul li {
 .row {
   --bs-gutter-x: 0; }
 
+/*animaciones---------------------*/
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; } }
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; } }
+
+.heartbeat {
+  -webkit-animation: heartbeat 1.5s ease-in-out 3s infinite both;
+  animation: heartbeat 1.5s ease-in-out 3s infinite both; }
+
 /* Imagen grande------------------------------------*/
 .presentacionIndex {
   height: 100vh;
@@ -99,7 +163,8 @@ footer ul li {
 
 .alfredoIndex--titulo {
   color: #faad01;
-  font-family: halimun; }
+  font-family: halimun;
+  font-family: 'Pacifico', cursive; }
 
 .divImportante {
   background-color: #689a3b;
@@ -110,10 +175,6 @@ footer ul li {
   color: white;
   text-align: center;
   background-color: transparent; }
-
-.importante--boton {
-  background-color: #faad01;
-  border: 0px; }
 
 /* Carta-------------------------------------------------*/
 .divCarta {
@@ -408,3 +469,6 @@ form {
 .botonForm {
   background-color: #faad01;
   border: 0px; }
+
+.botonForm:hover {
+  background-color: #fcca6e; }

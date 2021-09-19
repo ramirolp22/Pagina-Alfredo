@@ -21,6 +21,7 @@
 .alfredoIndex--titulo{
     color: $colorNaranja;
     font-family: halimun;
+    font-family: 'Pacifico', cursive;
 }
 .divImportante{
    background-color: $colorVerde;
@@ -31,10 +32,6 @@
     color: white;
     text-align: center;
     background-color: transparent;
-}
-.importante--boton{
-    background-color: $colorNaranja;
-    border: 0px;
 }
 /* Carta-------------------------------------------------*/
 .divCarta{
