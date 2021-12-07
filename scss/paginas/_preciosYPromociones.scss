@@ -1,6 +1,13 @@
 /* Estilo de la pagina-------------*/
 .divTablas{
     background-color: $colorVioleta;
+    color: white;
+}
+thead tr th{
+    color: white;
+}
+tbody tr td{
+    color: white;
 }
 /* Cajas individuales----------------*/
 .divTablas__tituloCI{

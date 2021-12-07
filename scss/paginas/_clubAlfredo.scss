@@ -2,10 +2,12 @@
 /* Estilo de la pagina-----------*/
 .divClubAlfredo{
     background-color: $colorVioleta;
+    color: white;
 }
 /* Beneficios-----------------*/
 .beneficios{
     align-items: center;
+    color: black;
 }
 .beneficios__div{
     border: 2px solid;
@@ -26,12 +28,14 @@
 .tituloSuscribirse{
     margin-top: 120px;
     margin-bottom: 50px;
+    color: white;
 }
 .divform{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 form{
     text-align: center;
