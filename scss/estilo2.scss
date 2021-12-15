@@ -5,6 +5,7 @@
 @import "./paginas/preciosYPromociones";
 @import "./paginas/recomendaciones";
 @import "./paginas/clubAlfredo";
+@import "./paginas/takeAway";
 @mixin dimension ($alto, $ancho){
     height: $alto;
     width: $ancho;

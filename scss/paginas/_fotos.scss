@@ -9,15 +9,39 @@
     color: white;
     font-family: 'Pacifico', cursive;
 }
-/* estilo de la pagina*/
-.divImagenes{
-    background-color: $colorVioleta;
-}
-.margenImagenMeedio{
-    margin: 15px 0 0 0;
-}
 .estiloEncargue{
     background-color: black;
+    display: flex;
+    justify-content: center;
+}
+//rectangulos---------------------------
+.rectangulos{
+    border: 5px solid $colorVioleta;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding-top: 40px;
+}
+.rectangulos:hover{
+    border: 5px solid $colorNaranja;
+}
+.rectangulos_titulo{
+    color: $colorVerde;
+    text-decoration: none;
+}
+.rectangulos_iconos{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: white;
+}
+.rectangulos_texto{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 70px;
+    padding: 10px;
 }
 // form encargue
 .formDeEncargue{
@@ -48,136 +72,3 @@
     border: 5px solid $colorNaranja;
     border-radius: 5px;
 }
-// Carta de encargue
-.divCarta_encargue{
-    background-color: black;
-    margin: auto;
-}
-.carta_encargue{
-    display: grid;
-    grid-template-areas: "tC tC"
-                         "img1 t1"
-                         "img2 t2"
-                         "img3 t3";
-    grid-template-rows: 1fr 3fr 3fr 3fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 10px;
-    border-radius: 10%;
-    padding: 5%;
-    width: 900px;
-    color: white;
-}
-.carta__titulo{
-    grid-area: tC;
-    justify-self: center;
-    border: 3px solid white;
-    border-radius: 10px;
-    height: 50px;
-    align-self: center;
-    
-}
-.carta__texto1{
-    grid-area: t1;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-}
-.carta__texto2{
-    grid-area: t2;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-}
-.carta__texto3{
-    grid-area: t3;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-}
-.carta__img1{
-    border-radius: 50%;
-    grid-area: img1;
-    justify-self: end;
-    align-self: center;
-    @include dimension(200px,200px )
-}
-.carta__img2{
-    grid-area: img2;
-    justify-self: end;
-    align-self: center;
-    @include dimension(200px,200px )
-}
-.carta__img3{
-    grid-area: img3;
-    justify-self: end;
-    align-self: center;
-    @include dimension(200px,200px )
-}
-.listaDePedidos{
-    background-color: black;
-    color: white;
-}
-// responsive a mano----------------------
-@media (max-width: 600px){
-    .carta_encargue{
-        grid-area: carta;
-        display: grid;
-        grid-template-areas: "tC"
-                             "img1"
-                             "t1"
-                             "img2"
-                             "t2"
-                             "img3"
-                             "t3";
-        grid-template-rows: 1fr ;
-        grid-column-gap: 30px;
-        grid-row-gap: 10px;
-        border-radius: 10%;
-        padding: 5%;
-        width: 900px;
-    }
-    .alfredoIndex{
-        margin-top: 100px;
-    }
-    .carta__img1{
-        grid-area: img1;
-        justify-self: center;
-        align-self: center;
-        @include dimension(200px,200px )
-    }
-    .carta__img2{
-        grid-area: img2;
-        justify-self: center;
-        align-self: center;
-        @include dimension(200px,200px )
-    }
-    .carta__img3{
-        grid-area: img3;
-        justify-self: center;
-        align-self: center;
-        @include dimension(200px,200px )
-    }
-    .carta__texto1{
-        grid-area: t1;
-        justify-self: center;
-        align-self: center;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    .carta__texto2{
-        grid-area: t2;
-        justify-self: center;
-        align-self: center;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    .carta__texto3{
-        grid-area: t3;
-        justify-self: center;
-        align-self: center;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-}
-
-

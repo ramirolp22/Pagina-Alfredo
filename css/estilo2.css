@@ -327,15 +327,38 @@ footer ul li {
   color: white;
   font-family: 'Pacifico', cursive; }
 
-/* estilo de la pagina*/
-.divImagenes {
-  background-color: #9a2c60; }
-
-.margenImagenMeedio {
-  margin: 15px 0 0 0; }
-
 .estiloEncargue {
-  background-color: black; }
+  background-color: black;
+  display: flex;
+  justify-content: center; }
+
+.rectangulos {
+  border: 5px solid #9a2c60;
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  padding-top: 40px; }
+
+.rectangulos:hover {
+  border: 5px solid #faad01; }
+
+.rectangulos_titulo {
+  color: #689a3b;
+  text-decoration: none; }
+
+.rectangulos_iconos {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  color: white; }
+
+.rectangulos_texto {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 70px;
+  padding: 10px; }
 
 .formDeEncargue {
   width: 700px;
@@ -364,123 +387,6 @@ footer ul li {
   background-color: #faad01;
   border: 5px solid #faad01;
   border-radius: 5px; }
-
-.divCarta_encargue {
-  background-color: black;
-  margin: auto; }
-
-.carta_encargue {
-  display: grid;
-  grid-template-areas: "tC tC" "img1 t1" "img2 t2" "img3 t3";
-  grid-template-rows: 1fr 3fr 3fr 3fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 10px;
-  border-radius: 10%;
-  padding: 5%;
-  width: 900px;
-  color: white; }
-
-.carta__titulo {
-  grid-area: tC;
-  justify-self: center;
-  border: 3px solid white;
-  border-radius: 10px;
-  height: 50px;
-  align-self: center; }
-
-.carta__texto1 {
-  grid-area: t1;
-  justify-self: center;
-  align-self: center;
-  text-align: center; }
-
-.carta__texto2 {
-  grid-area: t2;
-  justify-self: center;
-  align-self: center;
-  text-align: center; }
-
-.carta__texto3 {
-  grid-area: t3;
-  justify-self: center;
-  align-self: center;
-  text-align: center; }
-
-.carta__img1 {
-  border-radius: 50%;
-  grid-area: img1;
-  justify-self: end;
-  align-self: center;
-  height: 200px;
-  width: 200px; }
-
-.carta__img2 {
-  grid-area: img2;
-  justify-self: end;
-  align-self: center;
-  height: 200px;
-  width: 200px; }
-
-.carta__img3 {
-  grid-area: img3;
-  justify-self: end;
-  align-self: center;
-  height: 200px;
-  width: 200px; }
-
-.listaDePedidos {
-  background-color: black;
-  color: white; }
-
-@media (max-width: 600px) {
-  .carta_encargue {
-    grid-area: carta;
-    display: grid;
-    grid-template-areas: "tC" "img1" "t1" "img2" "t2" "img3" "t3";
-    grid-template-rows: 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 10px;
-    border-radius: 10%;
-    padding: 5%;
-    width: 900px; }
-  .alfredoIndex {
-    margin-top: 100px; }
-  .carta__img1 {
-    grid-area: img1;
-    justify-self: center;
-    align-self: center;
-    height: 200px;
-    width: 200px; }
-  .carta__img2 {
-    grid-area: img2;
-    justify-self: center;
-    align-self: center;
-    height: 200px;
-    width: 200px; }
-  .carta__img3 {
-    grid-area: img3;
-    justify-self: center;
-    align-self: center;
-    height: 200px;
-    width: 200px; }
-  .carta__texto1 {
-    grid-area: t1;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    margin-bottom: 40px; }
-  .carta__texto2 {
-    grid-area: t2;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    margin-bottom: 40px; }
-  .carta__texto3 {
-    grid-area: t3;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    margin-bottom: 40px; } }
 
 /* estilo de la pagina----------------*/
 .divLocal {
@@ -658,3 +564,254 @@ form {
 
 .botonForm:hover {
   background-color: #fcca6e; }
+
+.estiloTakeAway {
+  background-color: black;
+  height: 100vh; }
+
+#antesDelPedido {
+  margin: auto;
+  margin-top: 50px;
+  color: white;
+  width: 600px;
+  height: 450px;
+  border: 5px solid #9a2c60;
+  border-radius: 10px; }
+
+.antesDelPedido_titulo {
+  color: #faad01; }
+
+.antesDelPedido_texto {
+  text-align: center;
+  padding: 5px;
+  font-size: 1.3rem;
+  color: #689a3b; }
+
+.antesDelPedido_divBoton {
+  display: flex;
+  justify-content: center; }
+
+.antesDelPedido_divBoton-boton {
+  margin-top: 20px;
+  background-color: #faad01;
+  border: 0px; }
+
+#elijoPromo {
+  display: none; }
+
+.elijoPromo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start; }
+
+.promos {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.promos_opcion {
+  border: 5px solid #9a2c60;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  background-color: #faad01; }
+
+.promos_opcion:hover {
+  border-color: #689a3b; }
+
+.promos_titulo {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 3px; }
+
+.carritoYBoton {
+  display: none;
+  width: 300px; }
+
+.carrito {
+  min-height: 600px;
+  color: white;
+  text-align: center;
+  border: 3px solid #689a3b;
+  border-radius: 10px; }
+
+.carrito_boton {
+  width: 170px;
+  margin: auto;
+  padding: 2px; }
+
+.arreglo {
+  display: none; }
+
+.tamanio_carrito {
+  width: 120px;
+  margin: auto; }
+
+.remove {
+  color: #faad01;
+  background-color: black;
+  border: 1px solid #faad01;
+  width: 25px;
+  border-radius: 50%; }
+
+.resumen {
+  display: none;
+  max-width: 600px;
+  margin: 20px auto auto auto;
+  color: white;
+  border: 3px solid #689a3b;
+  border-radius: 10px; }
+
+.resumen_div {
+  display: flex;
+  justify-content: center; }
+
+.subtitulos {
+  font-size: 1.5rem;
+  color: #689a3b;
+  text-align: center; }
+
+.list-cosas {
+  list-style: none; }
+
+.pequenioForm {
+  font-size: 1.3rem;
+  display: none; }
+
+.concluision {
+  display: none; }
+
+.divCarta_encargue {
+  background-color: black; }
+
+.carta_encargue {
+  display: grid;
+  grid-template-areas: "tC tC" "img1 t1" "img2 t2" "img3 t3";
+  grid-template-rows: 1fr 3fr 3fr 3fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
+  border-radius: 10%;
+  width: 900px;
+  color: white; }
+
+.carta__titulo {
+  grid-area: tC;
+  justify-self: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  height: 50px;
+  align-self: center; }
+
+.carta__texto1 {
+  grid-area: t1;
+  justify-self: center;
+  align-self: center;
+  text-align: center; }
+
+.carta__texto2 {
+  grid-area: t2;
+  justify-self: center;
+  align-self: center;
+  text-align: center; }
+
+.carta__texto3 {
+  grid-area: t3;
+  justify-self: center;
+  align-self: center;
+  text-align: center; }
+
+.carta__img1 {
+  border-radius: 50%;
+  grid-area: img1;
+  justify-self: end;
+  align-self: center;
+  height: 200px;
+  width: 200px; }
+
+.carta__img2 {
+  grid-area: img2;
+  justify-self: end;
+  align-self: center;
+  height: 200px;
+  width: 200px; }
+
+.carta__img3 {
+  grid-area: img3;
+  justify-self: end;
+  align-self: center;
+  height: 200px;
+  width: 200px; }
+
+.carta_boton {
+  background-color: #faad01;
+  border: 0px; }
+
+.mostrarBotonS {
+  display: none; }
+
+.mostrarBotonR {
+  display: none; }
+
+@media (max-width: 600px) {
+  .carta_encargue {
+    grid-area: carta;
+    display: grid;
+    grid-template-areas: "tC" "img1" "t1" "img2" "t2" "img3" "t3";
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    border-radius: 10%;
+    padding: 5%;
+    width: 900px; }
+  .alfredoIndex {
+    margin-top: 100px; }
+  .carta__img1 {
+    grid-area: img1;
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    width: 200px; }
+  .carta__img2 {
+    grid-area: img2;
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    width: 200px; }
+  .carta__img3 {
+    grid-area: img3;
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    width: 200px; }
+  .carta__texto1 {
+    grid-area: t1;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 40px; }
+  .carta__texto2 {
+    grid-area: t2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 40px; }
+  .carta__texto3 {
+    grid-area: t3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 40px; } }

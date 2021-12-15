@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilo2.css">
+    <title>Encargue / take Away</title>
+</head>
+<body>
+    <!--nav------------------------------------------------------------->
+  <div class="row">
+    <div class="presentacionIndexNav miNav_encargue">
+      <nav class="navbar navbar-expand-lg navbar-light col-12 my-2">
+          <div class="container justify-content-start">
+            <a class="navbar-brand" href="#">
+              <img class="heartbeat" src="../imagenes/logoNav.png" alt="" width="120" height="120">
+            </a>
+            <div><h1 class="titulos text-light">Encargue</h1></div>
+          </div>
+          <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav justify-content-end w-100">
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="recomendaciones.html">Recomendaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="encargue.html">Encargue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="clubAlfredo.html">Club Alfredo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="local.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </div>
+    <!--antes del pedido--------------------------------------------->
+    <div class="row estiloTakeAway">
+        <div id="antesDelPedido">
+            <h1 class="text-center mb-4 antesDelPedido_titulo">Aca esta el local</h1>
+            <div class="max-wrapperT mb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.3839686468373!2d-57.959618284148334!3d-34.94698378324957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e88bea8021f3%3A0x2221b8b71ffd3103!2sAv.%2066%201716%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1626111794069!5m2!1ses!2sar"  width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="antesDelPedido_texto">
+                <p>Estamos el sabado entre las 12 y 17hs en calle 66 n1716 e 29 y 30 </p>
+            </div>
+            <div class="col-12 antesDelPedido_divBoton">
+                <button class="btn btn-primary antesDelPedido_divBoton-boton" type="submit" id="botonAntesDelPedido">Hacer pedido</button>
+            </div>
+        </div>
+      <!--despues de tocar el 1er boton----------------------------------->
+        <div id="elijoPromo">
+            <div class="elijoPromo">
+              <!--carta---------------------------------------->
+              <div class=" divCarta_encargue col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                <div class="carta_encargue  row">
+                      <h2 class="carta__titulo text-center">Nuestra carta del finde</h2>
+                          <img class="carta__img1 rounded-circle" src="../imagenes/imagenSAlfredo.jpeg" alt="Foto masa morron" data-aos="fade-right">
+                          <div class="carta__texto1">
+                            <h3>Especial Alfredo</h3>
+                            <h4>Sorrentinos de masa de morrón rellenos de espinaca, muzzarella y zanahoria glaseada</p></h4>
+                            <button class="btn btn-primary carta_boton mostrarBotonS agregar" type="submit">Agregar al carrito</button>
+                          </div>
+                          <img class="carta__img2 rounded-circle" src="../imagenes/imagenRVAlfredo.jpeg" alt="Foto masa espinaca" data-aos="fade-right">
+                          <div class="carta__texto2">
+                            <h3>Masa espinaca</h3>
+                            <h4><p>Raviolones de masa de espinaca rellenos de roquefort y cebolla caramelizada</p></h4>
+                            <button class="btn btn-primary carta_boton mostrarBotonR agregar" type="submit">Agregar al carrito</button>
+                          </div>
+                          <img class="carta__img3 rounded-circle" src="../imagenes/imagenRRAlfredo.jpeg" alt="Foto masa remolacha" data-aos="fade-right">
+                          <div class="carta__texto3">
+                            <h3>Masa remolacha</h3>
+                            <h4><p>Raviolones de masa de remolacha rellenos de bondiola a la mostaza</p></h4>
+                            <button class="btn btn-primary carta_boton mostrarBotonR agregar" type="submit">Agregar al carrito</button>
+                          </div>                    
+                </div>
+              </div>
+              <!--promos------------------------------------------->
+              <div class="promos row">
+                  <h2 class="promos_titulo col-12">Elegi la promo</h2>
+                  <div class="col-6">
+                    <button class="promos_opcion raviolones row" id="CR">
+                      <p class="col-12 nombrePromo">Caja individual raviolones</p>
+                      <p class="col-12 price">350</p>
+                    </button>
+                  </div>
+                  <div class="col-6" >
+                    <button class="promos_opcion sorrentinos row" id="CS">
+                      <p class="col-12 nombrePromo">Caja individual sorrentinos</p>
+                      <p class="col-12 price">390</p>
+                    </button></div>
+                  <div class="col-6" >
+                    <button id="promo1" class="promos_opcion raviolones row">
+                      <p class="col-12 nombrePromo">Promo 1: 2 cajas de raviolones</p>
+                      <p class="col-12 price">660</p>
+                    </button>
+                  </div>
+                  <div class="col-6" >
+                    <button id="promo2" class="promos_opcion sorrentinos row">
+                      <p class="col-12 nombrePromo">Promo 2: 2 cajas de sorrentinos</p>
+                      <p class="col-12 price">760</p>
+                    </button>
+                  </div>
+                  <div class="col-6" >
+                    <button id="promo3" class="promos_opcion sorrentinos row">
+                      <p class="col-12 nombrePromo">Promo 3: 4 cajas de sorrentinos</p>
+                      <p class="col-12 price">1480</p>
+                    </button>
+                  </div>
+                  <div id="promo4" class="col-6" >
+                    <button class="promos_opcion sorrentinos row">
+                      <p class="col-12 nombrePromo">Promo 4: 6 cajas de sorrentinos</p>
+                      <p class="col-12 price">2160</p>
+                    </button>
+                  </div>
+              </div>
+              <!--carrito--------------------------------------------->
+              <div class="row carritoYBoton">
+                <div class="carrito col-12">
+                    <h2 class="col-12">Tu carrito</h2>
+                    <div class="col-12 row tamanio_carrito">
+                      <p class="col-9">Total: $</p>
+                      <p class="carrito_total col-3"></p>
+                    </div>
+                    <div class="elejisteCajas"></div>
+                    <ul class="col-12 list-items"></ul>
+                </div>
+                <div class="arreglo"></div>
+              </div>
+            </div>
+        </div>
+        <!--resumen------------------------------------------------>
+        <div class="resumen">
+          <div class="resumen_div row">
+              <div class="col-12">
+                  <h2 class="colorNaranja display-5 text-center">Resumen del pedido</h2>
+                  <div class="col-12 row tamanio_carrito">
+                    <p class="col-9">Total: $</p>
+                    <p class="carrito_total col-3"></p>
+                  </div>
+                  <p class="subtitulos">Promos elegidas:</p>
+                  <ul class="list-promos row"></ul>
+                  <p class="subtitulos">Cajas elegidas</p>
+                  <p class="list-items-resumen row list-cosas col-12"></p>
+              </div>
+              <div class="carrito_boton col-12 row">
+                <button id ="volver" class="btn btn-primary carta_boton mb-2 mt-2 col-12 text-center">Quiero otra promo</button>
+                <button id = "terminar" class="btn btn-primary carta_boton col-12 text-center">Terminar el pedido</button>
+              </div>
+              <!--pequeño form------->
+              <div class="pequenioForm col-12">
+                  <form class="row g-3 needs-validation mt-5">
+                      <div class="col-lg-12 position-relative">
+                        <label for="validationTooltip01" class="form-label">Ingrese su nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                      </div>
+                      <div class="col-12">
+                        <button id = "confirmarPedido"class="btn btn-primary botonForm" type="submit" >Confirmar pedido</button>
+                      </div>
+                  </form>
+              </div>
+              <div class="conclusion text-center"></div>
+          </div>
+        </div>
+    </div>
+    <!--scripst-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/miJs.js"></script>  
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>

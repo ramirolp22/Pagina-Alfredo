@@ -40,7 +40,7 @@
                   <a class="nav-link text-light" href="recomendaciones.html">Recomendaciones</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="fotos.html">Encargue</a>
+                  <a class="nav-link text-light" href="encargue.html">Encargue</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="clubAlfredo.html">Club Alfredo</a>
@@ -76,14 +76,32 @@
         <div class="formDeContacto text-center my-3">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
+            <input type="email" class="form-control formEmail" id="exampleFormControlInput1" placeholder="nombre@email.com">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Escribi tu consulta</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control formTexto" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary botonForm">Enviar</button>
+            <button type="submit" class="btn btn-primary botonForm enviarConsulta">Enviar</button>
+          </div>
+        </div>
+        <!--modal----------------------------------------------------->
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
           </div>
         </div>
    </div>
@@ -135,7 +153,9 @@
         </div>
     </div>
   </footer>
-<!--scripts------------------------------------------------------------>      
-<script src="../js/bootstrap.js"></script>           
+<!--scripts-->  
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/miJsConsulta.js"></script>  
+    <script src="../js/bootstrap.js"></script>          
 </body>
 </html>
